@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structbNode" kind="struct" language="C++" prot="public">
+    <compoundname>bNode</compoundname>
+    <includes refid="btree_8h" local="no">btree.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbNode_1af6c706eed7adb9793fd5504dc43b702f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char bNode::nodeType</definition>
+        <argsstring></argsstring>
+        <name>nodeType</name>
+        <qualifiedname>bNode::nodeType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="40" column="10" bodyfile="includes/btree.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbNode_1ab8e394254c78ff2a5ea6375b311d43b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bNode::numKeys</definition>
+        <argsstring></argsstring>
+        <name>numKeys</name>
+        <qualifiedname>bNode::numKeys</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="41" column="9" bodyfile="includes/btree.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbNode_1ac410e83303c004e8277a1b9322612fec" prot="public" static="no" mutable="no">
+        <type><ref refid="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" kindref="member">Key</ref></type>
+        <definition>Key bNode::key[MAX_KEYS+1]</definition>
+        <argsstring>[MAX_KEYS+1]</argsstring>
+        <name>key</name>
+        <qualifiedname>bNode::key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="42" column="9" bodyfile="includes/btree.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbNode_1ac99e22587bcde2d92813a5caacb9fe75" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bNode::desc[MAX_DESC+1]</definition>
+        <argsstring>[MAX_DESC+1]</argsstring>
+        <name>desc</name>
+        <qualifiedname>bNode::desc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="43" column="9" bodyfile="includes/btree.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbNode_1ad0269da840ae98e2e200183491636000" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bNode::rrn</definition>
+        <argsstring></argsstring>
+        <name>rrn</name>
+        <qualifiedname>bNode::rrn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="44" column="9" bodyfile="includes/btree.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that represents a B-Tree node. The node type has 3 possible values: ROOT(0), MID(1) and LEAF(2) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>bNode</label>
+        <link refid="structbNode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>key</label>
+        <link refid="structkey"/>
+      </node>
+    </collaborationgraph>
+    <location file="includes/btree.h" line="39" column="1" bodyfile="includes/btree.h" bodystart="39" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structbNode_1ac99e22587bcde2d92813a5caacb9fe75" prot="public" virt="non-virtual"><scope>bNode</scope><name>desc</name></member>
+      <member refid="structbNode_1ac410e83303c004e8277a1b9322612fec" prot="public" virt="non-virtual"><scope>bNode</scope><name>key</name></member>
+      <member refid="structbNode_1af6c706eed7adb9793fd5504dc43b702f" prot="public" virt="non-virtual"><scope>bNode</scope><name>nodeType</name></member>
+      <member refid="structbNode_1ab8e394254c78ff2a5ea6375b311d43b2" prot="public" virt="non-virtual"><scope>bNode</scope><name>numKeys</name></member>
+      <member refid="structbNode_1ad0269da840ae98e2e200183491636000" prot="public" virt="non-virtual"><scope>bNode</scope><name>rrn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

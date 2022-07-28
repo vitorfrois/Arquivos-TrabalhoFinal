@@ -1,0 +1,39 @@
+\hypertarget{index__t1_8h_source}{}\doxysection{index\+\_\+t1.\+h}
+\label{index__t1_8h_source}\index{includes/index\_t1.h@{includes/index\_t1.h}}
+\mbox{\hyperlink{index__t1_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef \_\_INDEX\_T1\_H\_\_}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define \_\_INDEX\_T1\_H\_\_}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{utils_8h}{utils.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define DATA\_HEADER\_SIZE 182}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structindex__data__s1}{index\_data\_s1}}\{}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} rrn;}
+\DoxyCodeLine{20 \}\mbox{\hyperlink{index__t1_8h_aa0c440541f5ac7c16f6ebbc28a04dd6d}{index\_data\_st1}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structindex__s1}{index\_s1}}\{}
+\DoxyCodeLine{26     \mbox{\hyperlink{structindex__data__s1}{index\_data\_st1}} *data;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} size;}
+\DoxyCodeLine{28 \}\mbox{\hyperlink{index__t1_8h_acefa9f5f522bee0edf97308ff9cfd7a4}{index\_st1}};}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{36 \textcolor{keywordtype}{void} \mbox{\hyperlink{index__t1_8h_a3070d860ef695e5e1208187e60bd20e0}{create\_index\_t1}}(FILE *binFile, FILE *indexFile);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44 \textcolor{keywordtype}{void} \mbox{\hyperlink{index__t1_8h_adac0e76cf7a6fa44695d6fa558f1189f}{write\_index\_file\_t1}}(FILE *indexFile, \mbox{\hyperlink{structindex__s1}{index\_st1}} index);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52 \mbox{\hyperlink{structindex__s1}{index\_st1}} \mbox{\hyperlink{index__t1_8h_a4f19765982ab68ee74cd58cc878696d4}{get\_index\_t1}}(FILE *indexFile);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{61 \textcolor{keywordtype}{void} \mbox{\hyperlink{index__t1_8h_aa9e30c884530068cf0211b3b23c88768}{delete\_where\_t1}}(FILE *file, \mbox{\hyperlink{structindex__s1}{index\_st1}} index, \mbox{\hyperlink{structWField}{Field}} *f, \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{73 \textcolor{keywordtype}{void} \mbox{\hyperlink{index__t1_8h_af8bc868e7d9ca02dca583f9db69012c5}{update\_where\_t1}}(FILE *binFile, \mbox{\hyperlink{structindex__s1}{index\_st1}} index, \mbox{\hyperlink{structWField}{Field}} *search, \textcolor{keywordtype}{int} x, \mbox{\hyperlink{structWField}{Field}} *update, \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{int} \mbox{\hyperlink{index__t1_8h_ac84925ee732c5981468d628f66f038c9}{binary\_search\_t1}}(\mbox{\hyperlink{structindex__s1}{index\_st1}} index, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

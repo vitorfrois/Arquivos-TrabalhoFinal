@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structindex__data__s2" kind="struct" language="C++" prot="public">
+    <compoundname>index_data_s2</compoundname>
+    <includes refid="index__t2_8h" local="no">index_t2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structindex__data__s2_1a79de52750b96df5cf91bd38b37b1c325" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int index_data_s2::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>index_data_s2::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="17" column="9" bodyfile="includes/index_t2.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structindex__data__s2_1ab2c0f1e05483fa4fcb9921d39e616225" prot="public" static="no" mutable="no">
+        <type>long long int</type>
+        <definition>long long int index_data_s2::byteOffset</definition>
+        <argsstring></argsstring>
+        <name>byteOffset</name>
+        <qualifiedname>index_data_s2::byteOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="18" column="19" bodyfile="includes/index_t2.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that represents a single item data in the index. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="includes/index_t2.h" line="16" column="1" bodyfile="includes/index_t2.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structindex__data__s2_1ab2c0f1e05483fa4fcb9921d39e616225" prot="public" virt="non-virtual"><scope>index_data_s2</scope><name>byteOffset</name></member>
+      <member refid="structindex__data__s2_1a79de52750b96df5cf91bd38b37b1c325" prot="public" virt="non-virtual"><scope>index_data_s2</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

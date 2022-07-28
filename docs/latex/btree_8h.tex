@@ -1,0 +1,223 @@
+\hypertarget{btree_8h}{}\doxysection{includes/btree.h File Reference}
+\label{btree_8h}\index{includes/btree.h@{includes/btree.h}}
+
+
+Functions for managing B-\/\+Tree.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkey}{key}}
+\begin{DoxyCompactList}\small\item\em Struct that represents a B-\/\+Tree key. Every key has a id, file type and a rrn or byteoffset. A union \char`\"{}value\char`\"{} is used to store different type values on the key. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbNode}{b\+Node}}
+\begin{DoxyCompactList}\small\item\em Struct that represents a B-\/\+Tree node. The node type has 3 possible values\+: ROOT(0), MID(1) and LEAF(2) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbTree}{b\+Tree}}
+\begin{DoxyCompactList}\small\item\em Struct that represents a B-\/\+Tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{btree_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{btree_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}} 
+\#define {\bfseries INF}~10e8
+\item 
+\mbox{\Hypertarget{btree_8h_a3077ecca3770bdee50e6a17dfb55d002}\label{btree_8h_a3077ecca3770bdee50e6a17dfb55d002}} 
+\#define {\bfseries MAX\+\_\+\+KEYS}~3
+\item 
+\mbox{\Hypertarget{btree_8h_a06ea269956fb652c4f4853e593813b26}\label{btree_8h_a06ea269956fb652c4f4853e593813b26}} 
+\#define {\bfseries MAX\+\_\+\+DESC}~4
+\item 
+\mbox{\Hypertarget{btree_8h_a77988da40e9a35da51ea0e8943ebbd4a}\label{btree_8h_a77988da40e9a35da51ea0e8943ebbd4a}} 
+\#define {\bfseries ROOT}~\textquotesingle{}0\textquotesingle{}
+\item 
+\mbox{\Hypertarget{btree_8h_a045054247e192cb387ff6126429f8199}\label{btree_8h_a045054247e192cb387ff6126429f8199}} 
+\#define {\bfseries MID}~\textquotesingle{}1\textquotesingle{}
+\item 
+\mbox{\Hypertarget{btree_8h_a62e90d5c1b5aad7ab60823163cc2f2d7}\label{btree_8h_a62e90d5c1b5aad7ab60823163cc2f2d7}} 
+\#define {\bfseries LEAF}~\textquotesingle{}2\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{btree_8h_a2356fb7b976daa7003f1e629351af5ce}\label{btree_8h_a2356fb7b976daa7003f1e629351af5ce}} 
+typedef struct \mbox{\hyperlink{structkey}{key}} {\bfseries Key}
+\begin{DoxyCompactList}\small\item\em Struct that represents a B-\/\+Tree key. Every key has a id, file type and a rrn or byteoffset. A union \char`\"{}value\char`\"{} is used to store different type values on the key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{btree_8h_a6090f6b4bf1f6995a25a8bb2719823ea}{compare\+Keys}} (const void $\ast$x, const void $\ast$y)
+\begin{DoxyCompactList}\small\item\em Compare two values to make operations in the B-\/\+Tree. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$ \mbox{\hyperlink{btree_8h_a604f93638e3376ca22cf97cdfd7b9156}{read\+Node}} (FILE $\ast$index\+File, int node\+RRN, char type)
+\begin{DoxyCompactList}\small\item\em Read a node from the index\+File with the specified RRN. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbTree}{b\+Tree}} $\ast$ \mbox{\hyperlink{btree_8h_ab221fb711d048782eccd3d2205e0fe4e}{read\+\_\+tree\+\_\+header}} (FILE $\ast$index\+File, char type)
+\begin{DoxyCompactList}\small\item\em Reads the B-\/\+Tree header. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{btree_8h_a2356fb7b976daa7003f1e629351af5ce}{Key}} \mbox{\hyperlink{btree_8h_ae08a913663d198fb6f42f73d45af2d96}{search\+ID}} (FILE $\ast$index\+File, struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$node, int id, char type)
+\begin{DoxyCompactList}\small\item\em Search for a key in B-\/\+Tree with id. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$ \mbox{\hyperlink{btree_8h_a7894da72c3fea568f79ef1c307943503}{insert\+Key}} (FILE $\ast$index\+File, struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$node, \mbox{\hyperlink{btree_8h_a2356fb7b976daa7003f1e629351af5ce}{Key}})
+\begin{DoxyCompactList}\small\item\em Insert a new key in B-\/\+Tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{btree_8h_aacc992c0640153e89ea1951487ffd606}{destroy\+Tree}} (struct \mbox{\hyperlink{structbTree}{b\+Tree}} $\ast$tree)
+\begin{DoxyCompactList}\small\item\em Free all allocated memory for B-\/\+Tree. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{btree_8h_a566eebc6cd5895b11f4dab2bae645bb2}{create\+\_\+btree\+\_\+t1}} (FILE $\ast$bin\+File, FILE $\ast$index\+File)
+\begin{DoxyCompactList}\small\item\em Creates a type 1 B-\/\+Tree index file based on registries binary file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{btree_8h_a6ee043356c2d48ba7f49830d9946f12f}{create\+\_\+btree\+\_\+t2}} (FILE $\ast$bin\+File, FILE $\ast$index\+File)
+\begin{DoxyCompactList}\small\item\em Creates a type 2 B-\/\+Tree index file based on registries binary file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for managing B-\/\+Tree. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{btree_8h_a6090f6b4bf1f6995a25a8bb2719823ea}\label{btree_8h_a6090f6b4bf1f6995a25a8bb2719823ea}} 
+\index{btree.h@{btree.h}!compareKeys@{compareKeys}}
+\index{compareKeys@{compareKeys}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{compareKeys()}{compareKeys()}}
+{\footnotesize\ttfamily int compare\+Keys (\begin{DoxyParamCaption}\item[{const void $\ast$}]{x,  }\item[{const void $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Compare two values to make operations in the B-\/\+Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & id 1 \\
+\hline
+{\em y} & id 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{btree_8h_a566eebc6cd5895b11f4dab2bae645bb2}\label{btree_8h_a566eebc6cd5895b11f4dab2bae645bb2}} 
+\index{btree.h@{btree.h}!create\_btree\_t1@{create\_btree\_t1}}
+\index{create\_btree\_t1@{create\_btree\_t1}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{create\_btree\_t1()}{create\_btree\_t1()}}
+{\footnotesize\ttfamily void create\+\_\+btree\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{FILE $\ast$}]{index\+File }\end{DoxyParamCaption})}
+
+
+
+Creates a type 1 B-\/\+Tree index file based on registries binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & bin\+File \\
+\hline
+{\em index\+File} & B-\/\+Tree index file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{btree_8h_a6ee043356c2d48ba7f49830d9946f12f}\label{btree_8h_a6ee043356c2d48ba7f49830d9946f12f}} 
+\index{btree.h@{btree.h}!create\_btree\_t2@{create\_btree\_t2}}
+\index{create\_btree\_t2@{create\_btree\_t2}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{create\_btree\_t2()}{create\_btree\_t2()}}
+{\footnotesize\ttfamily void create\+\_\+btree\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{FILE $\ast$}]{index\+File }\end{DoxyParamCaption})}
+
+
+
+Creates a type 2 B-\/\+Tree index file based on registries binary file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & bin\+File \\
+\hline
+{\em index\+File} & B-\/\+Tree index file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{btree_8h_aacc992c0640153e89ea1951487ffd606}\label{btree_8h_aacc992c0640153e89ea1951487ffd606}} 
+\index{btree.h@{btree.h}!destroyTree@{destroyTree}}
+\index{destroyTree@{destroyTree}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{destroyTree()}{destroyTree()}}
+{\footnotesize\ttfamily void destroy\+Tree (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structbTree}{b\+Tree}} $\ast$}]{tree }\end{DoxyParamCaption})}
+
+
+
+Free all allocated memory for B-\/\+Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Allocated B-\/\+Tree \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{btree_8h_a7894da72c3fea568f79ef1c307943503}\label{btree_8h_a7894da72c3fea568f79ef1c307943503}} 
+\index{btree.h@{btree.h}!insertKey@{insertKey}}
+\index{insertKey@{insertKey}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{insertKey()}{insertKey()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$ insert\+Key (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{index\+File,  }\item[{struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$}]{node,  }\item[{\mbox{\hyperlink{btree_8h_a2356fb7b976daa7003f1e629351af5ce}{Key}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Insert a new key in B-\/\+Tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+File} & B-\/\+Tree index file \\
+\hline
+{\em node} & B-\/\+Tree root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct b\+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{btree_8h_ab221fb711d048782eccd3d2205e0fe4e}\label{btree_8h_ab221fb711d048782eccd3d2205e0fe4e}} 
+\index{btree.h@{btree.h}!read\_tree\_header@{read\_tree\_header}}
+\index{read\_tree\_header@{read\_tree\_header}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{read\_tree\_header()}{read\_tree\_header()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbTree}{b\+Tree}} $\ast$ read\+\_\+tree\+\_\+header (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{index\+File,  }\item[{char}]{type }\end{DoxyParamCaption})}
+
+
+
+Reads the B-\/\+Tree header. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+File} & B-\/\+Tree index file \\
+\hline
+{\em type} & Type of file. 1 for fixed size and 2 for variable size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct b\+Tree$\ast$ A struct that represents B-\/\+Tree 
+\end{DoxyReturn}
+\mbox{\Hypertarget{btree_8h_a604f93638e3376ca22cf97cdfd7b9156}\label{btree_8h_a604f93638e3376ca22cf97cdfd7b9156}} 
+\index{btree.h@{btree.h}!readNode@{readNode}}
+\index{readNode@{readNode}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{readNode()}{readNode()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$ read\+Node (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{index\+File,  }\item[{int}]{node\+RRN,  }\item[{char}]{type }\end{DoxyParamCaption})}
+
+
+
+Read a node from the index\+File with the specified RRN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+File} & B-\/\+Tree index file \\
+\hline
+{\em node\+RRN} & Node RRN \\
+\hline
+{\em type} & Type of file. 1 for fixed size and 2 for variable size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct b\+Node$\ast$ A struct that represents found node 
+\end{DoxyReturn}
+\mbox{\Hypertarget{btree_8h_ae08a913663d198fb6f42f73d45af2d96}\label{btree_8h_ae08a913663d198fb6f42f73d45af2d96}} 
+\index{btree.h@{btree.h}!searchID@{searchID}}
+\index{searchID@{searchID}!btree.h@{btree.h}}
+\doxysubsubsection{\texorpdfstring{searchID()}{searchID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{btree_8h_a2356fb7b976daa7003f1e629351af5ce}{Key}} search\+ID (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{index\+File,  }\item[{struct \mbox{\hyperlink{structbNode}{b\+Node}} $\ast$}]{node,  }\item[{int}]{id,  }\item[{char}]{type }\end{DoxyParamCaption})}
+
+
+
+Search for a key in B-\/\+Tree with id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & B-\/\+Tree root \\
+\hline
+{\em id} & ID to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key Struct 
+\end{DoxyReturn}

@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="btree_8h" kind="file" language="C++">
+    <compoundname>btree.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>includes/btree.h</label>
+        <link refid="btree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>includes/btree.h</label>
+        <link refid="btree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structkey" prot="public">key</innerclass>
+    <innerclass refid="structbNode" prot="public">bNode</innerclass>
+    <innerclass refid="structbTree" prot="public">bTree</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="btree_8h_1a12c2040f25d8e3a7b9e1c2024c618cb6" prot="public" static="no">
+        <name>INF</name>
+        <initializer>10e8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="11" column="9" bodyfile="includes/btree.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="btree_8h_1a3077ecca3770bdee50e6a17dfb55d002" prot="public" static="no">
+        <name>MAX_KEYS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="13" column="9" bodyfile="includes/btree.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="btree_8h_1a06ea269956fb652c4f4853e593813b26" prot="public" static="no">
+        <name>MAX_DESC</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="14" column="9" bodyfile="includes/btree.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="btree_8h_1a77988da40e9a35da51ea0e8943ebbd4a" prot="public" static="no">
+        <name>ROOT</name>
+        <initializer>&apos;0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="17" column="9" bodyfile="includes/btree.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="btree_8h_1a045054247e192cb387ff6126429f8199" prot="public" static="no">
+        <name>MID</name>
+        <initializer>&apos;1&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="18" column="9" bodyfile="includes/btree.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="btree_8h_1a62e90d5c1b5aad7ab60823163cc2f2d7" prot="public" static="no">
+        <name>LEAF</name>
+        <initializer>&apos;2&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="19" column="9" bodyfile="includes/btree.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" prot="public" static="no">
+        <type>struct <ref refid="structkey" kindref="compound">key</ref></type>
+        <definition>typedef struct key Key</definition>
+        <argsstring></argsstring>
+        <name>Key</name>
+        <briefdescription>
+<para>Struct that represents a B-Tree key. Every key has a id, file type and a rrn or byteoffset. A union &quot;value&quot; is used to store different type values on the key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="33" column="4"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="btree_8h_1a6090f6b4bf1f6995a25a8bb2719823ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int compareKeys</definition>
+        <argsstring>(const void *x, const void *y)</argsstring>
+        <name>compareKeys</name>
+        <param>
+          <type>const void *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Compare two values to make operations in the B-Tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="66" column="5" declfile="includes/btree.h" declline="66" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1a604f93638e3376ca22cf97cdfd7b9156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbNode" kindref="compound">bNode</ref> *</type>
+        <definition>struct bNode * readNode</definition>
+        <argsstring>(FILE *indexFile, int nodeRRN, char type)</argsstring>
+        <name>readNode</name>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nodeRRN</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Read a node from the indexFile with the specified RRN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree index file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nodeRRN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node RRN </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of file. 1 for fixed size and 2 for variable size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>struct bNode* A struct that represents found node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="76" column="12" declfile="includes/btree.h" declline="76" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1ab221fb711d048782eccd3d2205e0fe4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbTree" kindref="compound">bTree</ref> *</type>
+        <definition>struct bTree * read_tree_header</definition>
+        <argsstring>(FILE *indexFile, char type)</argsstring>
+        <name>read_tree_header</name>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Reads the B-Tree header. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree index file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of file. 1 for fixed size and 2 for variable size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>struct bTree* A struct that represents B-Tree </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="85" column="12" declfile="includes/btree.h" declline="85" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1ae08a913663d198fb6f42f73d45af2d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" kindref="member">Key</ref></type>
+        <definition>Key searchID</definition>
+        <argsstring>(FILE *indexFile, struct bNode *node, int id, char type)</argsstring>
+        <name>searchID</name>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structbNode" kindref="compound">bNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Search for a key in B-Tree with id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree root </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID to be searched </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Key Struct </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="94" column="5" declfile="includes/btree.h" declline="94" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1a7894da72c3fea568f79ef1c307943503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structbNode" kindref="compound">bNode</ref> *</type>
+        <definition>struct bNode * insertKey</definition>
+        <argsstring>(FILE *indexFile, struct bNode *node, Key)</argsstring>
+        <name>insertKey</name>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structbNode" kindref="compound">bNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" kindref="member">Key</ref></type>
+        </param>
+        <briefdescription>
+<para>Insert a new key in B-Tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree index file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree root </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>struct bNode* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="103" column="12" declfile="includes/btree.h" declline="103" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1aacc992c0640153e89ea1951487ffd606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void destroyTree</definition>
+        <argsstring>(struct bTree *tree)</argsstring>
+        <name>destroyTree</name>
+        <param>
+          <type>struct <ref refid="structbTree" kindref="compound">bTree</ref> *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Free all allocated memory for B-Tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocated B-Tree </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="110" column="6" declfile="includes/btree.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1a566eebc6cd5895b11f4dab2bae645bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void create_btree_t1</definition>
+        <argsstring>(FILE *binFile, FILE *indexFile)</argsstring>
+        <name>create_btree_t1</name>
+        <param>
+          <type>FILE *</type>
+          <declname>binFile</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <briefdescription>
+<para>Creates a type 1 B-Tree index file based on registries binary file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>binFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binFile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree index file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="118" column="6" declfile="includes/btree.h" declline="118" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="btree_8h_1a6ee043356c2d48ba7f49830d9946f12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void create_btree_t2</definition>
+        <argsstring>(FILE *binFile, FILE *indexFile)</argsstring>
+        <name>create_btree_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>binFile</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <briefdescription>
+<para>Creates a type 2 B-Tree index file based on registries binary file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>binFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binFile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>B-Tree index file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="126" column="6" declfile="includes/btree.h" declline="126" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions for managing B-Tree. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BTREE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BTREE_H<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INF<sp/>10e8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_KEYS<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_DESC<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//cada<sp/>nó<sp/>possui<sp/>um<sp/>tipo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROOT<sp/>&apos;0&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MID<sp/>&apos;1&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEAF<sp/>&apos;2&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structkey" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structkey" kindref="compound">key</ref>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>fileType;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>byteOffset;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rrn;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>value;</highlight></codeline>
+<codeline lineno="33" refid="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" refkind="member"><highlight class="normal">}<ref refid="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" kindref="member">Key</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structbNode" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbNode" kindref="compound">bNode</ref>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nodeType;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numKeys;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structkey" kindref="compound">Key</ref><sp/><ref refid="structkey" kindref="compound">key</ref>[MAX_KEYS+1];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>desc[MAX_DESC+1];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rrn;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structbTree" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbTree" kindref="compound">bTree</ref>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbNode" kindref="compound">bNode</ref><sp/>*root;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rootRRN;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextRRN;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numNodes;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="btree_8h_1a6090f6b4bf1f6995a25a8bb2719823ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="btree_8h_1a6090f6b4bf1f6995a25a8bb2719823ea" kindref="member">compareKeys</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*y);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="btree_8h_1a604f93638e3376ca22cf97cdfd7b9156" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbNode" kindref="compound">bNode</ref><sp/>*<ref refid="btree_8h_1a604f93638e3376ca22cf97cdfd7b9156" kindref="member">readNode</ref>(FILE<sp/>*indexFile,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nodeRRN,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="btree_8h_1ab221fb711d048782eccd3d2205e0fe4e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbTree" kindref="compound">bTree</ref><sp/>*<ref refid="btree_8h_1ab221fb711d048782eccd3d2205e0fe4e" kindref="member">read_tree_header</ref>(FILE<sp/>*indexFile,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="btree_8h_1ae08a913663d198fb6f42f73d45af2d96" refkind="member"><highlight class="normal"><ref refid="structkey" kindref="compound">Key</ref><sp/><ref refid="btree_8h_1ae08a913663d198fb6f42f73d45af2d96" kindref="member">searchID</ref>(FILE<sp/>*indexFile,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbNode" kindref="compound">bNode</ref><sp/>*node,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="btree_8h_1a7894da72c3fea568f79ef1c307943503" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbNode" kindref="compound">bNode</ref><sp/>*<ref refid="btree_8h_1a7894da72c3fea568f79ef1c307943503" kindref="member">insertKey</ref>(FILE<sp/>*indexFile,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbNode" kindref="compound">bNode</ref><sp/>*node,<sp/><ref refid="structkey" kindref="compound">Key</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="btree_8h_1aacc992c0640153e89ea1951487ffd606" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="btree_8h_1aacc992c0640153e89ea1951487ffd606" kindref="member">destroyTree</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbTree" kindref="compound">bTree</ref><sp/>*tree);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="btree_8h_1a566eebc6cd5895b11f4dab2bae645bb2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="btree_8h_1a566eebc6cd5895b11f4dab2bae645bb2" kindref="member">create_btree_t1</ref>(FILE<sp/>*binFile,<sp/>FILE<sp/>*indexFile);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="btree_8h_1a6ee043356c2d48ba7f49830d9946f12f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="btree_8h_1a6ee043356c2d48ba7f49830d9946f12f" kindref="member">create_btree_t2</ref>(FILE<sp/>*binFile,<sp/>FILE<sp/>*indexFile);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="includes/btree.h"/>
+  </compounddef>
+</doxygen>

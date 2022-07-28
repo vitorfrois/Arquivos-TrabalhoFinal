@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="file__t2_8h" kind="file" language="C++">
+    <compoundname>file_t2.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="csv_8h" local="yes">../includes/csv.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>../includes/csv.h</label>
+        <link refid="csv_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>includes/file_t2.h</label>
+        <link refid="file__t2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../includes/myString.h</label>
+        <link refid="myString_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ctype.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>includes/file_t2.h</label>
+        <link refid="file__t2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="file__t2_8h_1a1d8c5309e07439b8d9a61ad4e6295057" prot="public" static="no">
+        <type>long long int</type>
+        <definition>typedef long long int lli</definition>
+        <argsstring></argsstring>
+        <name>lli</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="11" column="23" bodyfile="includes/file_t2.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="file__t2_8h_1a10abacf75f119d41fdb1c40b19108709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FILE *</type>
+        <definition>FILE * create_file_t2</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>create_file_t2</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Creates a file of type 2 and writes it&apos;s header. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of file to be created </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FILE* Pointer to file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="19" column="6" declfile="includes/file_t2.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1ac6c785827529c796de77b15bc8718e05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int calculate_registry_size</definition>
+        <argsstring>(registry_data_st data)</argsstring>
+        <name>calculate_registry_size</name>
+        <param>
+          <type><ref refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kindref="member">registry_data_st</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Calculate size of registry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Registry </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Size of Registry </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="27" column="5" declfile="includes/file_t2.h" declline="27" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1adfcdca231b71e6d14551de9874a9950d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add_registry_t2</definition>
+        <argsstring>(FILE *file, registry_data_st data, int additionalSize)</argsstring>
+        <name>add_registry_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kindref="member">registry_data_st</ref></type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>additionalSize</declname>
+        </param>
+        <briefdescription>
+<para>Adds a registry to a type 2 file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File of type 2 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Registry data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="35" column="6" declfile="includes/file_t2.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1a4180385ab7d9abce93132d8c5d2565d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_byte_offset</definition>
+        <argsstring>(FILE *file, lli byteOffset)</argsstring>
+        <name>update_byte_offset</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>lli</type>
+          <declname>byteOffset</declname>
+        </param>
+        <briefdescription>
+<para>Updates the byte offset field of a header from a type 2 file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to be updated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New byte offset </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="43" column="6" declfile="includes/file_t2.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1a3e17b9550f52950da932a195fe7f04c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kindref="member">registry_data_st</ref></type>
+        <definition>registry_data_st read_registry_t2</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>read_registry_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Reads a variable size registry of specified size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File that contains the registry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registrySize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of registry to be read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>csv_data_st Read data of registry </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="52" column="18" declfile="includes/file_t2.h" declline="52" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1ac4c1c0949999ba2d9b55809085f99215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_file_t2</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>read_file_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Read and print all registries in a type 2 file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to be read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="59" column="6" declfile="includes/file_t2.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1a71ba3f36603148e2d09883e97ae88ab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void close_file_t2</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>close_file_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Adequately closes a type 2 file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to be closed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="66" column="6" declfile="includes/file_t2.h" declline="66" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1ad00902d2d35c2701feca731dd89bf091" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void search_where_t2</definition>
+        <argsstring>(FILE *file, Field *f, int n)</argsstring>
+        <name>search_where_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1a73cb953389e5a1a14c2c726796f047c3" kindref="member">Field</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Search and print for registries in file with Field f equivalency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File with registries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of structs to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of array f </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="75" column="6" declfile="includes/file_t2.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1a2b5a781c8f606f1aea842423b9656870" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long int</type>
+        <definition>long int insert_into_t2</definition>
+        <argsstring>(FILE *binFile, registry_data_st data)</argsstring>
+        <name>insert_into_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>binFile</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kindref="member">registry_data_st</ref></type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a new registry in file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>binFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type 2 file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New registry data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="83" column="10" declfile="includes/file_t2.h" declline="83" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="file__t2_8h_1a4cf7d5eb8360cb825d128773689a7d18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void search_byteOffset</definition>
+        <argsstring>(FILE *file, long int byteOffset)</argsstring>
+        <name>search_byteOffset</name>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>long int</type>
+          <declname>byteOffset</declname>
+        </param>
+        <briefdescription>
+<para>Search and print registry with specified byte offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>File to be searched </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte offset of registry </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/file_t2.h" line="91" column="6" declfile="includes/file_t2.h" declline="91" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions related to type 2 registries. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__FILE_T2_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FILE_T2_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../includes/csv.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lli;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="file__t2_8h_1a10abacf75f119d41fdb1c40b19108709" refkind="member"><highlight class="normal">FILE<sp/>*<ref refid="file__t2_8h_1a10abacf75f119d41fdb1c40b19108709" kindref="member">create_file_t2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="file__t2_8h_1ac6c785827529c796de77b15bc8718e05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1ac6c785827529c796de77b15bc8718e05" kindref="member">calculate_registry_size</ref>(<ref refid="structregistry__data__s" kindref="compound">registry_data_st</ref><sp/>data);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="file__t2_8h_1adfcdca231b71e6d14551de9874a9950d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1adfcdca231b71e6d14551de9874a9950d" kindref="member">add_registry_t2</ref>(FILE<sp/>*file,<sp/><ref refid="structregistry__data__s" kindref="compound">registry_data_st</ref><sp/>data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>additionalSize);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="file__t2_8h_1a4180385ab7d9abce93132d8c5d2565d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1a4180385ab7d9abce93132d8c5d2565d7" kindref="member">update_byte_offset</ref>(FILE<sp/>*file,<sp/>lli<sp/>byteOffset);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="file__t2_8h_1a3e17b9550f52950da932a195fe7f04c3" refkind="member"><highlight class="normal"><ref refid="structregistry__data__s" kindref="compound">registry_data_st</ref><sp/><ref refid="file__t2_8h_1a3e17b9550f52950da932a195fe7f04c3" kindref="member">read_registry_t2</ref>(FILE*<sp/>file);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="file__t2_8h_1ac4c1c0949999ba2d9b55809085f99215" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1ac4c1c0949999ba2d9b55809085f99215" kindref="member">read_file_t2</ref>(FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="file__t2_8h_1a71ba3f36603148e2d09883e97ae88ab7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1a71ba3f36603148e2d09883e97ae88ab7" kindref="member">close_file_t2</ref>(FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="file__t2_8h_1ad00902d2d35c2701feca731dd89bf091" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1ad00902d2d35c2701feca731dd89bf091" kindref="member">search_where_t2</ref>(FILE<sp/>*file,<sp/><ref refid="structWField" kindref="compound">Field</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="file__t2_8h_1a2b5a781c8f606f1aea842423b9656870" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1a2b5a781c8f606f1aea842423b9656870" kindref="member">insert_into_t2</ref>(FILE<sp/>*binFile,<sp/><ref refid="structregistry__data__s" kindref="compound">registry_data_st</ref><sp/>data);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="file__t2_8h_1a4cf7d5eb8360cb825d128773689a7d18" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="file__t2_8h_1a4cf7d5eb8360cb825d128773689a7d18" kindref="member">search_byteOffset</ref>(FILE<sp/>*file,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>byteOffset);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="includes/file_t2.h"/>
+  </compounddef>
+</doxygen>

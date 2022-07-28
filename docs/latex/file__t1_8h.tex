@@ -1,0 +1,237 @@
+\hypertarget{file__t1_8h}{}\doxysection{includes/file\+\_\+t1.h File Reference}
+\label{file__t1_8h}\index{includes/file\_t1.h@{includes/file\_t1.h}}
+
+
+Functions related to type 1 registries.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}csv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}index\+\_\+t1.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+FILE $\ast$ \mbox{\hyperlink{file__t1_8h_a99701500571b1f7a63f70ad2f5ecf8b8}{create\+\_\+file\+\_\+t1}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Creates a file of type 1 and writes it\textquotesingle{}s header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_a22e9656550a16724e4e633d78bc38cb6}{add\+\_\+registry\+\_\+t1}} (FILE $\ast$file, \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} data)
+\begin{DoxyCompactList}\small\item\em Adds a registry to a type 1 file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} \mbox{\hyperlink{file__t1_8h_a20669ccba55e9cc3c235f4f14d57f29a}{read\+\_\+registry\+\_\+t1}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Reads a variable size registry of specified size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_aa644cb69efd869e9fdc24f3c09b45b60}{read\+\_\+file\+\_\+t1}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Read and print all registries in a type 1 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_a72acb49ebcebd52b50e6d9a27209a46d}{search\+\_\+where\+\_\+t1}} (FILE $\ast$file, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$f, int n)
+\begin{DoxyCompactList}\small\item\em Search and print for registries in file with Field f equivalency. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_a18bf2b573be8f49294db036728b87f37}{close\+\_\+file\+\_\+t1}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Adequately closes a type 1 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_a66d1ea6e6fa512852486b9117fd4f69b}{search\+\_\+rrn}} (FILE $\ast$file, int rrn)
+\begin{DoxyCompactList}\small\item\em Search and print registry with specified RRN. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_a2c9b512536d2fc98827c214f281e7e62}{update\+\_\+\+RRN}} (FILE $\ast$file, int final\+RRN)
+\begin{DoxyCompactList}\small\item\em Updates the RRN field of a header from a type 1 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t1_8h_af5ee20ca39769b218082b2375c5273eb}{push\+\_\+deleted\+\_\+stack}} (FILE $\ast$bin\+File, int rrn)
+\begin{DoxyCompactList}\small\item\em Insert new RRN in deleted stack. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} \mbox{\hyperlink{file__t1_8h_aaf812be725f05d173385dacfa6259044}{update\+\_\+registry\+\_\+t1}} (\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} new\+Reg, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$update, int n)
+\begin{DoxyCompactList}\small\item\em Updates the fields of a registry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{file__t1_8h_aa19d56eedc74f26b3c804fc338e46833}{insert\+\_\+into\+\_\+t1}} (FILE $\ast$bin\+File, \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} data)
+\begin{DoxyCompactList}\small\item\em Inserts a new registry in file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to type 1 registries. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{file__t1_8h_a22e9656550a16724e4e633d78bc38cb6}\label{file__t1_8h_a22e9656550a16724e4e633d78bc38cb6}} 
+\index{file\_t1.h@{file\_t1.h}!add\_registry\_t1@{add\_registry\_t1}}
+\index{add\_registry\_t1@{add\_registry\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{add\_registry\_t1()}{add\_registry\_t1()}}
+{\footnotesize\ttfamily void add\+\_\+registry\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Adds a registry to a type 1 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File of type 1 \\
+\hline
+{\em data} & Registry data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_a18bf2b573be8f49294db036728b87f37}\label{file__t1_8h_a18bf2b573be8f49294db036728b87f37}} 
+\index{file\_t1.h@{file\_t1.h}!close\_file\_t1@{close\_file\_t1}}
+\index{close\_file\_t1@{close\_file\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{close\_file\_t1()}{close\_file\_t1()}}
+{\footnotesize\ttfamily void close\+\_\+file\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Adequately closes a type 1 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be closed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_a99701500571b1f7a63f70ad2f5ecf8b8}\label{file__t1_8h_a99701500571b1f7a63f70ad2f5ecf8b8}} 
+\index{file\_t1.h@{file\_t1.h}!create\_file\_t1@{create\_file\_t1}}
+\index{create\_file\_t1@{create\_file\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{create\_file\_t1()}{create\_file\_t1()}}
+{\footnotesize\ttfamily FILE $\ast$ create\+\_\+file\+\_\+t1 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Creates a file of type 1 and writes it\textquotesingle{}s header. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FILE$\ast$ Pointer to file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__t1_8h_aa19d56eedc74f26b3c804fc338e46833}\label{file__t1_8h_aa19d56eedc74f26b3c804fc338e46833}} 
+\index{file\_t1.h@{file\_t1.h}!insert\_into\_t1@{insert\_into\_t1}}
+\index{insert\_into\_t1@{insert\_into\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{insert\_into\_t1()}{insert\_into\_t1()}}
+{\footnotesize\ttfamily int insert\+\_\+into\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Inserts a new registry in file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & Type 1 file \\
+\hline
+{\em data} & New registry data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_af5ee20ca39769b218082b2375c5273eb}\label{file__t1_8h_af5ee20ca39769b218082b2375c5273eb}} 
+\index{file\_t1.h@{file\_t1.h}!push\_deleted\_stack@{push\_deleted\_stack}}
+\index{push\_deleted\_stack@{push\_deleted\_stack}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{push\_deleted\_stack()}{push\_deleted\_stack()}}
+{\footnotesize\ttfamily void push\+\_\+deleted\+\_\+stack (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{int}]{rrn }\end{DoxyParamCaption})}
+
+
+
+Insert new RRN in deleted stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & Stack file \\
+\hline
+{\em rrn} & RRN to be deleted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_aa644cb69efd869e9fdc24f3c09b45b60}\label{file__t1_8h_aa644cb69efd869e9fdc24f3c09b45b60}} 
+\index{file\_t1.h@{file\_t1.h}!read\_file\_t1@{read\_file\_t1}}
+\index{read\_file\_t1@{read\_file\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{read\_file\_t1()}{read\_file\_t1()}}
+{\footnotesize\ttfamily void read\+\_\+file\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Read and print all registries in a type 1 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be read \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_a20669ccba55e9cc3c235f4f14d57f29a}\label{file__t1_8h_a20669ccba55e9cc3c235f4f14d57f29a}} 
+\index{file\_t1.h@{file\_t1.h}!read\_registry\_t1@{read\_registry\_t1}}
+\index{read\_registry\_t1@{read\_registry\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{read\_registry\_t1()}{read\_registry\_t1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} read\+\_\+registry\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Reads a variable size registry of specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File that contains the registry \\
+\hline
+{\em registry\+Size} & size of registry to be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+csv\+\_\+data\+\_\+st Read data of registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__t1_8h_a66d1ea6e6fa512852486b9117fd4f69b}\label{file__t1_8h_a66d1ea6e6fa512852486b9117fd4f69b}} 
+\index{file\_t1.h@{file\_t1.h}!search\_rrn@{search\_rrn}}
+\index{search\_rrn@{search\_rrn}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{search\_rrn()}{search\_rrn()}}
+{\footnotesize\ttfamily void search\+\_\+rrn (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int}]{rrn }\end{DoxyParamCaption})}
+
+
+
+Search and print registry with specified RRN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be searched \\
+\hline
+{\em rrn} & RRN of registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_a72acb49ebcebd52b50e6d9a27209a46d}\label{file__t1_8h_a72acb49ebcebd52b50e6d9a27209a46d}} 
+\index{file\_t1.h@{file\_t1.h}!search\_where\_t1@{search\_where\_t1}}
+\index{search\_where\_t1@{search\_where\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{search\_where\_t1()}{search\_where\_t1()}}
+{\footnotesize\ttfamily void search\+\_\+where\+\_\+t1 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{f,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Search and print for registries in file with Field f equivalency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File with registries \\
+\hline
+{\em f} & Array of structs to check \\
+\hline
+{\em n} & Size of array f \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t1_8h_aaf812be725f05d173385dacfa6259044}\label{file__t1_8h_aaf812be725f05d173385dacfa6259044}} 
+\index{file\_t1.h@{file\_t1.h}!update\_registry\_t1@{update\_registry\_t1}}
+\index{update\_registry\_t1@{update\_registry\_t1}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{update\_registry\_t1()}{update\_registry\_t1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} update\+\_\+registry\+\_\+t1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{new\+Reg,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{update,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Updates the fields of a registry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Reg} & Registry to be updated \\
+\hline
+{\em update} & Array of new values \\
+\hline
+{\em n} & Size of array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+registry\+\_\+data\+\_\+st New created registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__t1_8h_a2c9b512536d2fc98827c214f281e7e62}\label{file__t1_8h_a2c9b512536d2fc98827c214f281e7e62}} 
+\index{file\_t1.h@{file\_t1.h}!update\_RRN@{update\_RRN}}
+\index{update\_RRN@{update\_RRN}!file\_t1.h@{file\_t1.h}}
+\doxysubsubsection{\texorpdfstring{update\_RRN()}{update\_RRN()}}
+{\footnotesize\ttfamily void update\+\_\+\+RRN (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{int}]{final\+RRN }\end{DoxyParamCaption})}
+
+
+
+Updates the RRN field of a header from a type 1 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be updated \\
+\hline
+{\em byte\+Offset} & New RRN \\
+\hline
+\end{DoxyParams}

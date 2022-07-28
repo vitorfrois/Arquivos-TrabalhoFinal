@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="myString_8h" kind="file" language="C++">
+    <compoundname>myString.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="utils_8h" local="yes">includes/utils.h</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>includes/myString.h</label>
+        <link refid="myString_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>includes/csv.h</label>
+        <link refid="csv_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>includes/file_t1.h</label>
+        <link refid="file__t1_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>includes/file_t2.h</label>
+        <link refid="file__t2_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>includes/index_t1.h</label>
+        <link refid="index__t1_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>includes/index_t2.h</label>
+        <link refid="index__t2_8h"/>
+      </node>
+      <node id="1">
+        <label>includes/myString.h</label>
+        <link refid="myString_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>includes/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="myString_8h_1a30c02b3bcd31ec79d3140bc9d699ca63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stringEnd</definition>
+        <argsstring>(int numSeparators, char separatorArray[], char c)</argsstring>
+        <name>stringEnd</name>
+        <param>
+          <type>int</type>
+          <declname>numSeparators</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>separatorArray</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Retorna se a leitura da string deve ou não ser finalizada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numSeparators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de separadores </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>separatorArray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array com todos finalizadores </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>caractere lido </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 1 para leitura finalizada, caso contrário, 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/myString.h" line="17" column="5" declfile="includes/myString.h" declline="17" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="myString_8h_1a635fd76b5f5283c9987162cc3f98f12c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * readFixedSizeString</definition>
+        <argsstring>(FILE *fp, int stringSize)</argsstring>
+        <name>readFixedSizeString</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stringSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/myString.h" line="19" column="6" declfile="includes/myString.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="myString_8h_1a6f2837efc90e880c7d9e79951d170521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * readString</definition>
+        <argsstring>()</argsstring>
+        <name>readString</name>
+        <briefdescription>
+<para>Função para leitura de strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>char* string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/myString.h" line="26" column="6" declfile="includes/myString.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="myString_8h_1ad6e1235e71340a21a651a75ca438810f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * readString2</definition>
+        <argsstring>(int num,...)</argsstring>
+        <name>readString2</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Função mais completa para leitura de strings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de separadores que serão passados </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>separadores: EOF, quebra de linha etc... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char* string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/myString.h" line="36" column="6" declfile="includes/myString.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions related to reading of strings. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MY_STRING_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MY_STRING_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="myString_8h_1a30c02b3bcd31ec79d3140bc9d699ca63" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="myString_8h_1a30c02b3bcd31ec79d3140bc9d699ca63" kindref="member">stringEnd</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numSeparators,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>separatorArray[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*readFixedSizeString(FILE<sp/>*fp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stringSize);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="myString_8h_1a6f2837efc90e880c7d9e79951d170521" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="myString_8h_1a6f2837efc90e880c7d9e79951d170521" kindref="member">readString</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="myString_8h_1ad6e1235e71340a21a651a75ca438810f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="myString_8h_1ad6e1235e71340a21a651a75ca438810f" kindref="member">readString2</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/>...);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="includes/myString.h"/>
+  </compounddef>
+</doxygen>

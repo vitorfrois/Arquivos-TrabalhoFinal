@@ -1,0 +1,219 @@
+\hypertarget{file__t2_8h}{}\doxysection{includes/file\+\_\+t2.h File Reference}
+\label{file__t2_8h}\index{includes/file\_t2.h@{includes/file\_t2.h}}
+
+
+Functions related to type 2 registries.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../includes/csv.\+h\char`\"{}}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{file__t2_8h_a1d8c5309e07439b8d9a61ad4e6295057}\label{file__t2_8h_a1d8c5309e07439b8d9a61ad4e6295057}} 
+typedef long long int {\bfseries lli}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+FILE $\ast$ \mbox{\hyperlink{file__t2_8h_a10abacf75f119d41fdb1c40b19108709}{create\+\_\+file\+\_\+t2}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Creates a file of type 2 and writes it\textquotesingle{}s header. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{file__t2_8h_ac6c785827529c796de77b15bc8718e05}{calculate\+\_\+registry\+\_\+size}} (\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} data)
+\begin{DoxyCompactList}\small\item\em Calculate size of registry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t2_8h_adfcdca231b71e6d14551de9874a9950d}{add\+\_\+registry\+\_\+t2}} (FILE $\ast$file, \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} data, int additional\+Size)
+\begin{DoxyCompactList}\small\item\em Adds a registry to a type 2 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t2_8h_a4180385ab7d9abce93132d8c5d2565d7}{update\+\_\+byte\+\_\+offset}} (FILE $\ast$file, lli byte\+Offset)
+\begin{DoxyCompactList}\small\item\em Updates the byte offset field of a header from a type 2 file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} \mbox{\hyperlink{file__t2_8h_a3e17b9550f52950da932a195fe7f04c3}{read\+\_\+registry\+\_\+t2}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Reads a variable size registry of specified size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t2_8h_ac4c1c0949999ba2d9b55809085f99215}{read\+\_\+file\+\_\+t2}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Read and print all registries in a type 2 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t2_8h_a71ba3f36603148e2d09883e97ae88ab7}{close\+\_\+file\+\_\+t2}} (FILE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Adequately closes a type 2 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t2_8h_ad00902d2d35c2701feca731dd89bf091}{search\+\_\+where\+\_\+t2}} (FILE $\ast$file, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$f, int n)
+\begin{DoxyCompactList}\small\item\em Search and print for registries in file with Field f equivalency. \end{DoxyCompactList}\item 
+long int \mbox{\hyperlink{file__t2_8h_a2b5a781c8f606f1aea842423b9656870}{insert\+\_\+into\+\_\+t2}} (FILE $\ast$bin\+File, \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} data)
+\begin{DoxyCompactList}\small\item\em Inserts a new registry in file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{file__t2_8h_a4cf7d5eb8360cb825d128773689a7d18}{search\+\_\+byte\+Offset}} (FILE $\ast$file, long int byte\+Offset)
+\begin{DoxyCompactList}\small\item\em Search and print registry with specified byte offset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to type 2 registries. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{file__t2_8h_adfcdca231b71e6d14551de9874a9950d}\label{file__t2_8h_adfcdca231b71e6d14551de9874a9950d}} 
+\index{file\_t2.h@{file\_t2.h}!add\_registry\_t2@{add\_registry\_t2}}
+\index{add\_registry\_t2@{add\_registry\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{add\_registry\_t2()}{add\_registry\_t2()}}
+{\footnotesize\ttfamily void add\+\_\+registry\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{data,  }\item[{int}]{additional\+Size }\end{DoxyParamCaption})}
+
+
+
+Adds a registry to a type 2 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File of type 2 \\
+\hline
+{\em data} & Registry data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t2_8h_ac6c785827529c796de77b15bc8718e05}\label{file__t2_8h_ac6c785827529c796de77b15bc8718e05}} 
+\index{file\_t2.h@{file\_t2.h}!calculate\_registry\_size@{calculate\_registry\_size}}
+\index{calculate\_registry\_size@{calculate\_registry\_size}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_registry\_size()}{calculate\_registry\_size()}}
+{\footnotesize\ttfamily int calculate\+\_\+registry\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Calculate size of registry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Registry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Size of Registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__t2_8h_a71ba3f36603148e2d09883e97ae88ab7}\label{file__t2_8h_a71ba3f36603148e2d09883e97ae88ab7}} 
+\index{file\_t2.h@{file\_t2.h}!close\_file\_t2@{close\_file\_t2}}
+\index{close\_file\_t2@{close\_file\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{close\_file\_t2()}{close\_file\_t2()}}
+{\footnotesize\ttfamily void close\+\_\+file\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Adequately closes a type 2 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be closed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t2_8h_a10abacf75f119d41fdb1c40b19108709}\label{file__t2_8h_a10abacf75f119d41fdb1c40b19108709}} 
+\index{file\_t2.h@{file\_t2.h}!create\_file\_t2@{create\_file\_t2}}
+\index{create\_file\_t2@{create\_file\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{create\_file\_t2()}{create\_file\_t2()}}
+{\footnotesize\ttfamily FILE $\ast$ create\+\_\+file\+\_\+t2 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Creates a file of type 2 and writes it\textquotesingle{}s header. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+FILE$\ast$ Pointer to file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__t2_8h_a2b5a781c8f606f1aea842423b9656870}\label{file__t2_8h_a2b5a781c8f606f1aea842423b9656870}} 
+\index{file\_t2.h@{file\_t2.h}!insert\_into\_t2@{insert\_into\_t2}}
+\index{insert\_into\_t2@{insert\_into\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{insert\_into\_t2()}{insert\_into\_t2()}}
+{\footnotesize\ttfamily long int insert\+\_\+into\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Inserts a new registry in file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & Type 2 file \\
+\hline
+{\em data} & New registry data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t2_8h_ac4c1c0949999ba2d9b55809085f99215}\label{file__t2_8h_ac4c1c0949999ba2d9b55809085f99215}} 
+\index{file\_t2.h@{file\_t2.h}!read\_file\_t2@{read\_file\_t2}}
+\index{read\_file\_t2@{read\_file\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{read\_file\_t2()}{read\_file\_t2()}}
+{\footnotesize\ttfamily void read\+\_\+file\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Read and print all registries in a type 2 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be read \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t2_8h_a3e17b9550f52950da932a195fe7f04c3}\label{file__t2_8h_a3e17b9550f52950da932a195fe7f04c3}} 
+\index{file\_t2.h@{file\_t2.h}!read\_registry\_t2@{read\_registry\_t2}}
+\index{read\_registry\_t2@{read\_registry\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{read\_registry\_t2()}{read\_registry\_t2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} read\+\_\+registry\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Reads a variable size registry of specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File that contains the registry \\
+\hline
+{\em registry\+Size} & size of registry to be read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+csv\+\_\+data\+\_\+st Read data of registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{file__t2_8h_a4cf7d5eb8360cb825d128773689a7d18}\label{file__t2_8h_a4cf7d5eb8360cb825d128773689a7d18}} 
+\index{file\_t2.h@{file\_t2.h}!search\_byteOffset@{search\_byteOffset}}
+\index{search\_byteOffset@{search\_byteOffset}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{search\_byteOffset()}{search\_byteOffset()}}
+{\footnotesize\ttfamily void search\+\_\+byte\+Offset (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{long int}]{byte\+Offset }\end{DoxyParamCaption})}
+
+
+
+Search and print registry with specified byte offset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be searched \\
+\hline
+{\em byte\+Offset} & Byte offset of registry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t2_8h_ad00902d2d35c2701feca731dd89bf091}\label{file__t2_8h_ad00902d2d35c2701feca731dd89bf091}} 
+\index{file\_t2.h@{file\_t2.h}!search\_where\_t2@{search\_where\_t2}}
+\index{search\_where\_t2@{search\_where\_t2}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{search\_where\_t2()}{search\_where\_t2()}}
+{\footnotesize\ttfamily void search\+\_\+where\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{f,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Search and print for registries in file with Field f equivalency. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File with registries \\
+\hline
+{\em f} & Array of structs to check \\
+\hline
+{\em n} & Size of array f \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__t2_8h_a4180385ab7d9abce93132d8c5d2565d7}\label{file__t2_8h_a4180385ab7d9abce93132d8c5d2565d7}} 
+\index{file\_t2.h@{file\_t2.h}!update\_byte\_offset@{update\_byte\_offset}}
+\index{update\_byte\_offset@{update\_byte\_offset}!file\_t2.h@{file\_t2.h}}
+\doxysubsubsection{\texorpdfstring{update\_byte\_offset()}{update\_byte\_offset()}}
+{\footnotesize\ttfamily void update\+\_\+byte\+\_\+offset (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{file,  }\item[{lli}]{byte\+Offset }\end{DoxyParamCaption})}
+
+
+
+Updates the byte offset field of a header from a type 2 file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to be updated \\
+\hline
+{\em byte\+Offset} & New byte offset \\
+\hline
+\end{DoxyParams}

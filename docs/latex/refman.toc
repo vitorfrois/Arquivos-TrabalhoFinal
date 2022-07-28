@@ -1,0 +1,132 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}b\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Node Struct Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}b\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tree Struct Reference}{5}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s1 Struct Reference}{6}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{6}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s2 Struct Reference}{6}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{7}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s1 Struct Reference}{7}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{7}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s2 Struct Reference}{7}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{7}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}key Struct Reference}{8}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{8}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}registry\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s Struct Reference}{8}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{9}{subsection.3.8.1}%
+\contentsline {section}{\numberline {3.9}WField Struct Reference}{9}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{9}{subsection.3.9.1}%
+\contentsline {chapter}{\numberline {4}File Documentation}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}includes/btree.h File Reference}{11}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{12}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{12}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}compareKeys()}{12}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}create\_btree\_t1()}{13}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}create\_btree\_t2()}{13}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}destroyTree()}{13}{subsubsection.4.1.2.4}%
+\contentsline {subsubsection}{\numberline {4.1.2.5}insertKey()}{13}{subsubsection.4.1.2.5}%
+\contentsline {subsubsection}{\numberline {4.1.2.6}read\_tree\_header()}{14}{subsubsection.4.1.2.6}%
+\contentsline {subsubsection}{\numberline {4.1.2.7}readNode()}{14}{subsubsection.4.1.2.7}%
+\contentsline {subsubsection}{\numberline {4.1.2.8}searchID()}{15}{subsubsection.4.1.2.8}%
+\contentsline {section}{\numberline {4.2}btree.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}includes/csv.h File Reference}{16}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{16}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{16}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}read\_from\_csv()}{16}{subsubsection.4.3.2.1}%
+\contentsline {section}{\numberline {4.4}csv.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{17}{section.4.4}%
+\contentsline {section}{\numberline {4.5}includes/database.h File Reference}{17}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{18}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Function Documentation}{18}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}create\_index()}{18}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}create\_index\_b()}{18}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}create\_table()}{18}{subsubsection.4.5.2.3}%
+\contentsline {subsubsection}{\numberline {4.5.2.4}delete\_from\_where()}{19}{subsubsection.4.5.2.4}%
+\contentsline {subsubsection}{\numberline {4.5.2.5}insert\_into()}{19}{subsubsection.4.5.2.5}%
+\contentsline {subsubsection}{\numberline {4.5.2.6}insert\_into\_b()}{19}{subsubsection.4.5.2.6}%
+\contentsline {subsubsection}{\numberline {4.5.2.7}search\_where\_b()}{20}{subsubsection.4.5.2.7}%
+\contentsline {subsubsection}{\numberline {4.5.2.8}select\_from\_RRN()}{20}{subsubsection.4.5.2.8}%
+\contentsline {subsubsection}{\numberline {4.5.2.9}select\_from\_where()}{20}{subsubsection.4.5.2.9}%
+\contentsline {subsubsection}{\numberline {4.5.2.10}update\_where()}{22}{subsubsection.4.5.2.10}%
+\contentsline {section}{\numberline {4.6}database.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{22}{section.4.6}%
+\contentsline {section}{\numberline {4.7}includes/file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t1.h File Reference}{22}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{23}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Function Documentation}{23}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}add\_registry\_t1()}{23}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}close\_file\_t1()}{24}{subsubsection.4.7.2.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.3}create\_file\_t1()}{24}{subsubsection.4.7.2.3}%
+\contentsline {subsubsection}{\numberline {4.7.2.4}insert\_into\_t1()}{24}{subsubsection.4.7.2.4}%
+\contentsline {subsubsection}{\numberline {4.7.2.5}push\_deleted\_stack()}{25}{subsubsection.4.7.2.5}%
+\contentsline {subsubsection}{\numberline {4.7.2.6}read\_file\_t1()}{25}{subsubsection.4.7.2.6}%
+\contentsline {subsubsection}{\numberline {4.7.2.7}read\_registry\_t1()}{25}{subsubsection.4.7.2.7}%
+\contentsline {subsubsection}{\numberline {4.7.2.8}search\_rrn()}{26}{subsubsection.4.7.2.8}%
+\contentsline {subsubsection}{\numberline {4.7.2.9}search\_where\_t1()}{26}{subsubsection.4.7.2.9}%
+\contentsline {subsubsection}{\numberline {4.7.2.10}update\_registry\_t1()}{26}{subsubsection.4.7.2.10}%
+\contentsline {subsubsection}{\numberline {4.7.2.11}update\_RRN()}{27}{subsubsection.4.7.2.11}%
+\contentsline {section}{\numberline {4.8}file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t1.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{27}{section.4.8}%
+\contentsline {section}{\numberline {4.9}includes/file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t2.h File Reference}{27}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{28}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Function Documentation}{28}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}add\_registry\_t2()}{28}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}calculate\_registry\_size()}{29}{subsubsection.4.9.2.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.3}close\_file\_t2()}{29}{subsubsection.4.9.2.3}%
+\contentsline {subsubsection}{\numberline {4.9.2.4}create\_file\_t2()}{29}{subsubsection.4.9.2.4}%
+\contentsline {subsubsection}{\numberline {4.9.2.5}insert\_into\_t2()}{30}{subsubsection.4.9.2.5}%
+\contentsline {subsubsection}{\numberline {4.9.2.6}read\_file\_t2()}{30}{subsubsection.4.9.2.6}%
+\contentsline {subsubsection}{\numberline {4.9.2.7}read\_registry\_t2()}{30}{subsubsection.4.9.2.7}%
+\contentsline {subsubsection}{\numberline {4.9.2.8}search\_byteOffset()}{31}{subsubsection.4.9.2.8}%
+\contentsline {subsubsection}{\numberline {4.9.2.9}search\_where\_t2()}{31}{subsubsection.4.9.2.9}%
+\contentsline {subsubsection}{\numberline {4.9.2.10}update\_byte\_offset()}{31}{subsubsection.4.9.2.10}%
+\contentsline {section}{\numberline {4.10}file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t2.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{32}{section.4.10}%
+\contentsline {section}{\numberline {4.11}includes/index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t1.h File Reference}{32}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{33}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Function Documentation}{33}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}binary\_search\_t1()}{33}{subsubsection.4.11.2.1}%
+\contentsline {subsubsection}{\numberline {4.11.2.2}create\_index\_t1()}{33}{subsubsection.4.11.2.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.3}delete\_where\_t1()}{34}{subsubsection.4.11.2.3}%
+\contentsline {subsubsection}{\numberline {4.11.2.4}get\_index\_t1()}{34}{subsubsection.4.11.2.4}%
+\contentsline {subsubsection}{\numberline {4.11.2.5}update\_where\_t1()}{34}{subsubsection.4.11.2.5}%
+\contentsline {subsubsection}{\numberline {4.11.2.6}write\_index\_file\_t1()}{35}{subsubsection.4.11.2.6}%
+\contentsline {section}{\numberline {4.12}index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t1.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{35}{section.4.12}%
+\contentsline {section}{\numberline {4.13}includes/index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t2.h File Reference}{36}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{37}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Function Documentation}{37}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}binary\_search\_t2()}{37}{subsubsection.4.13.2.1}%
+\contentsline {subsubsection}{\numberline {4.13.2.2}create\_index\_t2()}{37}{subsubsection.4.13.2.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.3}delete\_where\_t2()}{37}{subsubsection.4.13.2.3}%
+\contentsline {subsubsection}{\numberline {4.13.2.4}get\_index\_t2()}{38}{subsubsection.4.13.2.4}%
+\contentsline {subsubsection}{\numberline {4.13.2.5}update\_registry\_t2()}{38}{subsubsection.4.13.2.5}%
+\contentsline {subsubsection}{\numberline {4.13.2.6}update\_where\_t2()}{39}{subsubsection.4.13.2.6}%
+\contentsline {subsubsection}{\numberline {4.13.2.7}write\_index\_file\_t2()}{39}{subsubsection.4.13.2.7}%
+\contentsline {section}{\numberline {4.14}index\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t2.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{39}{section.4.14}%
+\contentsline {section}{\numberline {4.15}includes/my\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.h File Reference}{40}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{40}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Function Documentation}{40}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}readString()}{40}{subsubsection.4.15.2.1}%
+\contentsline {subsubsection}{\numberline {4.15.2.2}readString2()}{41}{subsubsection.4.15.2.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.3}stringEnd()}{41}{subsubsection.4.15.2.3}%
+\contentsline {section}{\numberline {4.16}my\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{section.4.16}%
+\contentsline {section}{\numberline {4.17}includes/utils.h File Reference}{42}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{43}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Typedef Documentation}{43}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}Field}{43}{subsubsection.4.17.2.1}%
+\contentsline {subsection}{\numberline {4.17.3}Function Documentation}{43}{subsection.4.17.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.1}check\_status()}{43}{subsubsection.4.17.3.1}%
+\contentsline {subsubsection}{\numberline {4.17.3.2}compare\_registry()}{43}{subsubsection.4.17.3.2}%
+\contentsline {subsubsection}{\numberline {4.17.3.3}free\_field()}{44}{subsubsection.4.17.3.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.4}get\_field()}{44}{subsubsection.4.17.3.4}%
+\contentsline {subsubsection}{\numberline {4.17.3.5}logical\_deletion()}{44}{subsubsection.4.17.3.5}%
+\contentsline {subsubsection}{\numberline {4.17.3.6}open\_file\_rb()}{45}{subsubsection.4.17.3.6}%
+\contentsline {subsubsection}{\numberline {4.17.3.7}open\_file\_rplusb()}{45}{subsubsection.4.17.3.7}%
+\contentsline {subsubsection}{\numberline {4.17.3.8}open\_file\_wb()}{45}{subsubsection.4.17.3.8}%
+\contentsline {subsubsection}{\numberline {4.17.3.9}print\_registry()}{46}{subsubsection.4.17.3.9}%
+\contentsline {subsubsection}{\numberline {4.17.3.10}search\_field\_id()}{46}{subsubsection.4.17.3.10}%
+\contentsline {section}{\numberline {4.18}utils.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.4.18}%
+\contentsline {section}{\numberline {4.19}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{47}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{48}{subsection.4.19.1}%
+\contentsline {chapter}{Index}{49}{section*.33}%

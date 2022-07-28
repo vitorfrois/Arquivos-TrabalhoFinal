@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="index__t2_8h" kind="file" language="C++">
+    <compoundname>index_t2.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes refid="utils_8h" local="yes">../includes/utils.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>includes/index_t2.h</label>
+        <link refid="index__t2_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../includes/myString.h</label>
+        <link refid="myString_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../includes/utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ctype.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structindex__data__s2" prot="public">index_data_s2</innerclass>
+    <innerclass refid="structindex__s2" prot="public">index_s2</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="index__t2_8h_1a1d8c5309e07439b8d9a61ad4e6295057" prot="public" static="no">
+        <type>long long int</type>
+        <definition>typedef long long int lli</definition>
+        <argsstring></argsstring>
+        <name>lli</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="11" column="23" bodyfile="includes/index_t2.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="index__t2_8h_1a58de49139a4f01bcef70dcebd625c6e0" prot="public" static="no">
+        <type>struct <ref refid="structindex__data__s2" kindref="compound">index_data_s2</ref></type>
+        <definition>typedef struct index_data_s2 index_data_st2</definition>
+        <argsstring></argsstring>
+        <name>index_data_st2</name>
+        <briefdescription>
+<para>Struct that represents a single item data in the index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="19" column="15"/>
+      </memberdef>
+      <memberdef kind="typedef" id="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" prot="public" static="no">
+        <type>struct <ref refid="structindex__s2" kindref="compound">index_s2</ref></type>
+        <definition>typedef struct index_s2 index_st2</definition>
+        <argsstring></argsstring>
+        <name>index_st2</name>
+        <briefdescription>
+<para>Struct that stores a array of index_data_st1 and it size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="27" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="index__t2_8h_1a0ee71d345a90621de5c811132f6b6646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void create_index_t2</definition>
+        <argsstring>(FILE *dataFile, FILE *indexFile)</argsstring>
+        <name>create_index_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>dataFile</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <briefdescription>
+<para>Create a index file based on binFile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>binFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binFile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indexFile </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="35" column="6" declfile="includes/index_t2.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="index__t2_8h_1a5cf7e9bc694a51e9bf1877e1e4f6a125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void delete_where_t2</definition>
+        <argsstring>(FILE *binFile, index_st2 index, Field *search, int n)</argsstring>
+        <name>delete_where_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>binFile</declname>
+        </param>
+        <param>
+          <type><ref refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kindref="member">index_st2</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1a73cb953389e5a1a14c2c726796f047c3" kindref="member">Field</ref> *</type>
+          <declname>search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Delete registries with specified fields. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binFile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of structs to check </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="44" column="6" declfile="includes/index_t2.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="index__t2_8h_1aa8dd20c63d1d9db0501e78a53e61535e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kindref="member">registry_data_st</ref></type>
+        <definition>registry_data_st update_registry_t2</definition>
+        <argsstring>(registry_data_st newReg, Field *update, int n)</argsstring>
+        <name>update_registry_t2</name>
+        <param>
+          <type><ref refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kindref="member">registry_data_st</ref></type>
+          <declname>newReg</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1a73cb953389e5a1a14c2c726796f047c3" kindref="member">Field</ref> *</type>
+          <declname>update</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Updates a single registry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newReg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Registry to be updates </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Field of new values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of update </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>registry_data_st Updated registry </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="54" column="18" declfile="includes/index_t2.h" declline="54" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="index__t2_8h_1a8134e95bedd2d73610e56096a5769874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int binary_search_t2</definition>
+        <argsstring>(index_st2 index, int id)</argsstring>
+        <name>binary_search_t2</name>
+        <param>
+          <type><ref refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kindref="member">index_st2</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Execute binary search for id at index_st. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Struct to be searched </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID to be found </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Found registry index </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="63" column="5" declfile="includes/index_t2.h" declline="63" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="index__t2_8h_1aeb32acf07fa89f5aa6ae4c32e5bc1ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kindref="member">index_st2</ref></type>
+        <definition>index_st2 get_index_t2</definition>
+        <argsstring>(FILE *indexFile)</argsstring>
+        <name>get_index_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <briefdescription>
+<para>Read all index data in index file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>index_st1 Returns a array of index data that was read </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="71" column="11" declfile="includes/index_t2.h" declline="71" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="index__t2_8h_1a3e65d124c46efe393c04df0761e4f338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_index_file_t2</definition>
+        <argsstring>(FILE *indexFile, index_st2 index)</argsstring>
+        <name>write_index_file_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>indexFile</declname>
+        </param>
+        <param>
+          <type><ref refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kindref="member">index_st2</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Write index_st1 values at index file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of index data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="79" column="6" declfile="includes/index_t2.h" declline="79" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="index__t2_8h_1afc1a314071b76c11a56066658d17fe94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void update_where_t2</definition>
+        <argsstring>(FILE *binFile, index_st2 index, Field *search, int x, Field *update, int y)</argsstring>
+        <name>update_where_t2</name>
+        <param>
+          <type>FILE *</type>
+          <declname>binFile</declname>
+        </param>
+        <param>
+          <type><ref refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kindref="member">index_st2</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1a73cb953389e5a1a14c2c726796f047c3" kindref="member">Field</ref> *</type>
+          <declname>search</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="utils_8h_1a73cb953389e5a1a14c2c726796f047c3" kindref="member">Field</ref> *</type>
+          <declname>update</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Function 8-1. Update fields of specified registries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>binFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binFile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indexFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>indexFile </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>search</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of fields present in registries that should be updated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of search </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of fields to update </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of update </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="91" column="6" declfile="includes/index_t2.h" declline="91" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions to deal with type 1 index files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__INDEX_T2_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__INDEX_T2_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../includes/utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lli;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structindex__data__s2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structindex__data__s2" kindref="compound">index_data_s2</ref>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>byteOffset;</highlight></codeline>
+<codeline lineno="19" refid="index__t2_8h_1a58de49139a4f01bcef70dcebd625c6e0" refkind="member"><highlight class="normal">}<ref refid="index__t2_8h_1a58de49139a4f01bcef70dcebd625c6e0" kindref="member">index_data_st2</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structindex__s2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structindex__s2" kindref="compound">index_s2</ref>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structindex__data__s2" kindref="compound">index_data_st2</ref><sp/>*data;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="27" refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" refkind="member"><highlight class="normal">}<ref refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kindref="member">index_st2</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="index__t2_8h_1a0ee71d345a90621de5c811132f6b6646" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="index__t2_8h_1a0ee71d345a90621de5c811132f6b6646" kindref="member">create_index_t2</ref>(FILE<sp/>*dataFile,<sp/>FILE<sp/>*indexFile);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="index__t2_8h_1a5cf7e9bc694a51e9bf1877e1e4f6a125" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="index__t2_8h_1a5cf7e9bc694a51e9bf1877e1e4f6a125" kindref="member">delete_where_t2</ref>(FILE<sp/>*binFile,<sp/><ref refid="structindex__s2" kindref="compound">index_st2</ref><sp/>index,<sp/><ref refid="structWField" kindref="compound">Field</ref><sp/>*search,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="index__t2_8h_1aa8dd20c63d1d9db0501e78a53e61535e" refkind="member"><highlight class="normal"><ref refid="structregistry__data__s" kindref="compound">registry_data_st</ref><sp/><ref refid="index__t2_8h_1aa8dd20c63d1d9db0501e78a53e61535e" kindref="member">update_registry_t2</ref>(<ref refid="structregistry__data__s" kindref="compound">registry_data_st</ref><sp/>newReg,<sp/><ref refid="structWField" kindref="compound">Field</ref><sp/>*update,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="index__t2_8h_1a8134e95bedd2d73610e56096a5769874" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="index__t2_8h_1a8134e95bedd2d73610e56096a5769874" kindref="member">binary_search_t2</ref>(<ref refid="structindex__s2" kindref="compound">index_st2</ref><sp/>index,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="index__t2_8h_1aeb32acf07fa89f5aa6ae4c32e5bc1ead" refkind="member"><highlight class="normal"><ref refid="structindex__s2" kindref="compound">index_st2</ref><sp/><ref refid="index__t2_8h_1aeb32acf07fa89f5aa6ae4c32e5bc1ead" kindref="member">get_index_t2</ref>(FILE<sp/>*indexFile);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="index__t2_8h_1a3e65d124c46efe393c04df0761e4f338" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="index__t2_8h_1a3e65d124c46efe393c04df0761e4f338" kindref="member">write_index_file_t2</ref>(FILE<sp/>*indexFile,<sp/><ref refid="structindex__s2" kindref="compound">index_st2</ref><sp/>index);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="index__t2_8h_1afc1a314071b76c11a56066658d17fe94" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="index__t2_8h_1afc1a314071b76c11a56066658d17fe94" kindref="member">update_where_t2</ref>(FILE<sp/>*binFile,<sp/><ref refid="structindex__s2" kindref="compound">index_st2</ref><sp/>index,<sp/><ref refid="structWField" kindref="compound">Field</ref><sp/>*search,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/><ref refid="structWField" kindref="compound">Field</ref><sp/>*update,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="includes/index_t2.h"/>
+  </compounddef>
+</doxygen>

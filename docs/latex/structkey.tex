@@ -1,0 +1,37 @@
+\hypertarget{structkey}{}\doxysection{key Struct Reference}
+\label{structkey}\index{key@{key}}
+
+
+Struct that represents a B-\/\+Tree key. Every key has a id, file type and a rrn or byteoffset. A union \char`\"{}value\char`\"{} is used to store different type values on the key.  
+
+
+
+
+{\ttfamily \#include $<$btree.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structkey_a91aaee28ce9fa803f5d42fd76b189f8a}\label{structkey_a91aaee28ce9fa803f5d42fd76b189f8a}} 
+int {\bfseries id}
+\item 
+\mbox{\Hypertarget{structkey_a0779ed737900b74aa1c7aa948a72d0fa}\label{structkey_a0779ed737900b74aa1c7aa948a72d0fa}} 
+char {\bfseries file\+Type}
+\item 
+\mbox{\Hypertarget{structkey_af2c522dc275e560b9e2bc7cb5a613382}\label{structkey_af2c522dc275e560b9e2bc7cb5a613382}} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>long int {\bfseries byteOffset}\\
+\>int {\bfseries rrn}\\
+\} {\bfseries value}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct that represents a B-\/\+Tree key. Every key has a id, file type and a rrn or byteoffset. A union \char`\"{}value\char`\"{} is used to store different type values on the key. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/\mbox{\hyperlink{btree_8h}{btree.\+h}}\end{DoxyCompactItemize}

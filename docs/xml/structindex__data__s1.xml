@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structindex__data__s1" kind="struct" language="C++" prot="public">
+    <compoundname>index_data_s1</compoundname>
+    <includes refid="index__t1_8h" local="no">index_t1.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structindex__data__s1_1a4fa17ecc198474bd2c3ebfc0af893cd4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int index_data_s1::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>index_data_s1::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t1.h" line="18" column="9" bodyfile="includes/index_t1.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structindex__data__s1_1a45c767b4d13d41d0534c5af58f429263" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int index_data_s1::rrn</definition>
+        <argsstring></argsstring>
+        <name>rrn</name>
+        <qualifiedname>index_data_s1::rrn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t1.h" line="19" column="9" bodyfile="includes/index_t1.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that represents a single item data in the index. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="includes/index_t1.h" line="17" column="1" bodyfile="includes/index_t1.h" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structindex__data__s1_1a4fa17ecc198474bd2c3ebfc0af893cd4" prot="public" virt="non-virtual"><scope>index_data_s1</scope><name>id</name></member>
+      <member refid="structindex__data__s1_1a45c767b4d13d41d0534c5af58f429263" prot="public" virt="non-virtual"><scope>index_data_s1</scope><name>rrn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structindex__s2" kind="struct" language="C++" prot="public">
+    <compoundname>index_s2</compoundname>
+    <includes refid="index__t2_8h" local="no">index_t2.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structindex__s2_1a77becc8883b80d749808b74673f78d9b" prot="public" static="no" mutable="no">
+        <type><ref refid="index__t2_8h_1a58de49139a4f01bcef70dcebd625c6e0" kindref="member">index_data_st2</ref> *</type>
+        <definition>index_data_st2* index_s2::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>index_s2::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="25" column="20" bodyfile="includes/index_t2.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structindex__s2_1a240d921e8475796c81141e21d76755b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int index_s2::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>index_s2::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/index_t2.h" line="26" column="9" bodyfile="includes/index_t2.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that stores a array of index_data_st1 and it size. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>index_data_s2</label>
+        <link refid="structindex__data__s2"/>
+      </node>
+      <node id="1">
+        <label>index_s2</label>
+        <link refid="structindex__s2"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="includes/index_t2.h" line="24" column="1" bodyfile="includes/index_t2.h" bodystart="24" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structindex__s2_1a77becc8883b80d749808b74673f78d9b" prot="public" virt="non-virtual"><scope>index_s2</scope><name>data</name></member>
+      <member refid="structindex__s2_1a240d921e8475796c81141e21d76755b1" prot="public" virt="non-virtual"><scope>index_s2</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

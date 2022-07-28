@@ -1,0 +1,191 @@
+\hypertarget{index__t2_8h}{}\doxysection{includes/index\+\_\+t2.h File Reference}
+\label{index__t2_8h}\index{includes/index\_t2.h@{includes/index\_t2.h}}
+
+
+Functions to deal with type 1 index files.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../includes/utils.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structindex__data__s2}{index\+\_\+data\+\_\+s2}}
+\begin{DoxyCompactList}\small\item\em Struct that represents a single item data in the index. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structindex__s2}{index\+\_\+s2}}
+\begin{DoxyCompactList}\small\item\em Struct that stores a array of index\+\_\+data\+\_\+st1 and it size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{index__t2_8h_a1d8c5309e07439b8d9a61ad4e6295057}\label{index__t2_8h_a1d8c5309e07439b8d9a61ad4e6295057}} 
+typedef long long int {\bfseries lli}
+\item 
+\mbox{\Hypertarget{index__t2_8h_a58de49139a4f01bcef70dcebd625c6e0}\label{index__t2_8h_a58de49139a4f01bcef70dcebd625c6e0}} 
+typedef struct \mbox{\hyperlink{structindex__data__s2}{index\+\_\+data\+\_\+s2}} {\bfseries index\+\_\+data\+\_\+st2}
+\begin{DoxyCompactList}\small\item\em Struct that represents a single item data in the index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}\label{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}} 
+typedef struct \mbox{\hyperlink{structindex__s2}{index\+\_\+s2}} {\bfseries index\+\_\+st2}
+\begin{DoxyCompactList}\small\item\em Struct that stores a array of index\+\_\+data\+\_\+st1 and it size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{index__t2_8h_a0ee71d345a90621de5c811132f6b6646}{create\+\_\+index\+\_\+t2}} (FILE $\ast$data\+File, FILE $\ast$index\+File)
+\begin{DoxyCompactList}\small\item\em Create a index file based on bin\+File. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{index__t2_8h_a5cf7e9bc694a51e9bf1877e1e4f6a125}{delete\+\_\+where\+\_\+t2}} (FILE $\ast$bin\+File, \mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}} index, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$search, int n)
+\begin{DoxyCompactList}\small\item\em Delete registries with specified fields. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} \mbox{\hyperlink{index__t2_8h_aa8dd20c63d1d9db0501e78a53e61535e}{update\+\_\+registry\+\_\+t2}} (\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} new\+Reg, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$update, int n)
+\begin{DoxyCompactList}\small\item\em Updates a single registry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{index__t2_8h_a8134e95bedd2d73610e56096a5769874}{binary\+\_\+search\+\_\+t2}} (\mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}} index, int id)
+\begin{DoxyCompactList}\small\item\em Execute binary search for id at index\+\_\+st. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}} \mbox{\hyperlink{index__t2_8h_aeb32acf07fa89f5aa6ae4c32e5bc1ead}{get\+\_\+index\+\_\+t2}} (FILE $\ast$index\+File)
+\begin{DoxyCompactList}\small\item\em Read all index data in index file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{index__t2_8h_a3e65d124c46efe393c04df0761e4f338}{write\+\_\+index\+\_\+file\+\_\+t2}} (FILE $\ast$index\+File, \mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}} index)
+\begin{DoxyCompactList}\small\item\em Write index\+\_\+st1 values at index file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{index__t2_8h_afc1a314071b76c11a56066658d17fe94}{update\+\_\+where\+\_\+t2}} (FILE $\ast$bin\+File, \mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}} index, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$search, int x, \mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$update, int y)
+\begin{DoxyCompactList}\small\item\em Function 8-\/1. Update fields of specified registries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions to deal with type 1 index files. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{index__t2_8h_a8134e95bedd2d73610e56096a5769874}\label{index__t2_8h_a8134e95bedd2d73610e56096a5769874}} 
+\index{index\_t2.h@{index\_t2.h}!binary\_search\_t2@{binary\_search\_t2}}
+\index{binary\_search\_t2@{binary\_search\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{binary\_search\_t2()}{binary\_search\_t2()}}
+{\footnotesize\ttfamily int binary\+\_\+search\+\_\+t2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}}}]{index,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Execute binary search for id at index\+\_\+st. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Struct to be searched \\
+\hline
+{\em id} & ID to be found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Found registry index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{index__t2_8h_a0ee71d345a90621de5c811132f6b6646}\label{index__t2_8h_a0ee71d345a90621de5c811132f6b6646}} 
+\index{index\_t2.h@{index\_t2.h}!create\_index\_t2@{create\_index\_t2}}
+\index{create\_index\_t2@{create\_index\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{create\_index\_t2()}{create\_index\_t2()}}
+{\footnotesize\ttfamily void create\+\_\+index\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{data\+File,  }\item[{FILE $\ast$}]{index\+File }\end{DoxyParamCaption})}
+
+
+
+Create a index file based on bin\+File. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & bin\+File \\
+\hline
+{\em index\+File} & index\+File \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{index__t2_8h_a5cf7e9bc694a51e9bf1877e1e4f6a125}\label{index__t2_8h_a5cf7e9bc694a51e9bf1877e1e4f6a125}} 
+\index{index\_t2.h@{index\_t2.h}!delete\_where\_t2@{delete\_where\_t2}}
+\index{delete\_where\_t2@{delete\_where\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{delete\_where\_t2()}{delete\_where\_t2()}}
+{\footnotesize\ttfamily void delete\+\_\+where\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{\mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}}}]{index,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{search,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Delete registries with specified fields. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & bin\+File \\
+\hline
+{\em f} & Array of structs to check \\
+\hline
+{\em n} & Size of array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{index__t2_8h_aeb32acf07fa89f5aa6ae4c32e5bc1ead}\label{index__t2_8h_aeb32acf07fa89f5aa6ae4c32e5bc1ead}} 
+\index{index\_t2.h@{index\_t2.h}!get\_index\_t2@{get\_index\_t2}}
+\index{get\_index\_t2@{get\_index\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{get\_index\_t2()}{get\_index\_t2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}} get\+\_\+index\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{index\+File }\end{DoxyParamCaption})}
+
+
+
+Read all index data in index file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+File} & Index file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index\+\_\+st1 Returns a array of index data that was read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{index__t2_8h_aa8dd20c63d1d9db0501e78a53e61535e}\label{index__t2_8h_aa8dd20c63d1d9db0501e78a53e61535e}} 
+\index{index\_t2.h@{index\_t2.h}!update\_registry\_t2@{update\_registry\_t2}}
+\index{update\_registry\_t2@{update\_registry\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{update\_registry\_t2()}{update\_registry\_t2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}} update\+\_\+registry\+\_\+t2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{utils_8h_ab4ecff344365ca5209e369260d4e6f85}{registry\+\_\+data\+\_\+st}}}]{new\+Reg,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{update,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Updates a single registry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Reg} & Registry to be updates \\
+\hline
+{\em update} & Field of new values \\
+\hline
+{\em n} & Size of update \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+registry\+\_\+data\+\_\+st Updated registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{index__t2_8h_afc1a314071b76c11a56066658d17fe94}\label{index__t2_8h_afc1a314071b76c11a56066658d17fe94}} 
+\index{index\_t2.h@{index\_t2.h}!update\_where\_t2@{update\_where\_t2}}
+\index{update\_where\_t2@{update\_where\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{update\_where\_t2()}{update\_where\_t2()}}
+{\footnotesize\ttfamily void update\+\_\+where\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{bin\+File,  }\item[{\mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}}}]{index,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{search,  }\item[{int}]{x,  }\item[{\mbox{\hyperlink{utils_8h_a73cb953389e5a1a14c2c726796f047c3}{Field}} $\ast$}]{update,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Function 8-\/1. Update fields of specified registries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bin\+File} & bin\+File \\
+\hline
+{\em index\+File} & index\+File \\
+\hline
+{\em search} & Array of fields present in registries that should be updated \\
+\hline
+{\em x} & Size of search \\
+\hline
+{\em update} & Array of fields to update \\
+\hline
+{\em y} & Size of update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{index__t2_8h_a3e65d124c46efe393c04df0761e4f338}\label{index__t2_8h_a3e65d124c46efe393c04df0761e4f338}} 
+\index{index\_t2.h@{index\_t2.h}!write\_index\_file\_t2@{write\_index\_file\_t2}}
+\index{write\_index\_file\_t2@{write\_index\_file\_t2}!index\_t2.h@{index\_t2.h}}
+\doxysubsubsection{\texorpdfstring{write\_index\_file\_t2()}{write\_index\_file\_t2()}}
+{\footnotesize\ttfamily void write\+\_\+index\+\_\+file\+\_\+t2 (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{index\+File,  }\item[{\mbox{\hyperlink{index__t2_8h_a9ab933d275ef4a0f7b58f9b10e162801}{index\+\_\+st2}}}]{index }\end{DoxyParamCaption})}
+
+
+
+Write index\+\_\+st1 values at index file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+File} & index file \\
+\hline
+{\em index} & Array of index data \\
+\hline
+\end{DoxyParams}

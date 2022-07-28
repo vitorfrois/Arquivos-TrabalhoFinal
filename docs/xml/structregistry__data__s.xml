@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structregistry__data__s" kind="struct" language="C++" prot="public">
+    <compoundname>registry_data_s</compoundname>
+    <includes refid="utils_8h" local="no">utils.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structregistry__data__s_1addf22a9186e4e8e3fd1871b8dfc4b678" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int registry_data_s::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>registry_data_s::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="20" column="9" bodyfile="includes/utils.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structregistry__data__s_1a2adc425b2bc8ef523c6e5e91b00f4f85" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int registry_data_s::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <qualifiedname>registry_data_s::year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="21" column="9" bodyfile="includes/utils.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structregistry__data__s_1ab9310f74355797135b58d69e01f16c9a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char registry_data_s::city[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>city</name>
+        <qualifiedname>registry_data_s::city</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="22" column="10" bodyfile="includes/utils.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structregistry__data__s_1a33dcabcaa533414579666d16ecdd8256" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int registry_data_s::amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>registry_data_s::amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="23" column="9" bodyfile="includes/utils.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structregistry__data__s_1ab6b14c5d781ead0ace9f63a00d823b59" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char registry_data_s::initials[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>initials</name>
+        <qualifiedname>registry_data_s::initials</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="24" column="10" bodyfile="includes/utils.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structregistry__data__s_1a326c4772e820877ae96ccc45a6dee5b0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char registry_data_s::brand[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>brand</name>
+        <qualifiedname>registry_data_s::brand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="25" column="10" bodyfile="includes/utils.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structregistry__data__s_1aa24d2377c62da75ef5d4f8da2d2544da" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char registry_data_s::model[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>model</name>
+        <qualifiedname>registry_data_s::model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/utils.h" line="26" column="10" bodyfile="includes/utils.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that stores registry data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="includes/utils.h" line="19" column="1" bodyfile="includes/utils.h" bodystart="19" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structregistry__data__s_1a33dcabcaa533414579666d16ecdd8256" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>amount</name></member>
+      <member refid="structregistry__data__s_1a326c4772e820877ae96ccc45a6dee5b0" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>brand</name></member>
+      <member refid="structregistry__data__s_1ab9310f74355797135b58d69e01f16c9a" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>city</name></member>
+      <member refid="structregistry__data__s_1addf22a9186e4e8e3fd1871b8dfc4b678" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>id</name></member>
+      <member refid="structregistry__data__s_1ab6b14c5d781ead0ace9f63a00d823b59" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>initials</name></member>
+      <member refid="structregistry__data__s_1aa24d2377c62da75ef5d4f8da2d2544da" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>model</name></member>
+      <member refid="structregistry__data__s_1a2adc425b2bc8ef523c6e5e91b00f4f85" prot="public" virt="non-virtual"><scope>registry_data_s</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

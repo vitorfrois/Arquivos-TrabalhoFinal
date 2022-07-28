@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="en-US">
+  <compound refid="structbNode" kind="struct"><name>bNode</name>
+    <member refid="structbNode_1af6c706eed7adb9793fd5504dc43b702f" kind="variable"><name>nodeType</name></member>
+    <member refid="structbNode_1ab8e394254c78ff2a5ea6375b311d43b2" kind="variable"><name>numKeys</name></member>
+    <member refid="structbNode_1ac410e83303c004e8277a1b9322612fec" kind="variable"><name>key</name></member>
+    <member refid="structbNode_1ac99e22587bcde2d92813a5caacb9fe75" kind="variable"><name>desc</name></member>
+    <member refid="structbNode_1ad0269da840ae98e2e200183491636000" kind="variable"><name>rrn</name></member>
+  </compound>
+  <compound refid="structbTree" kind="struct"><name>bTree</name>
+    <member refid="structbTree_1ae317ceae04986fe75798f518ca84b3d5" kind="variable"><name>status</name></member>
+    <member refid="structbTree_1a8d4acc88f97738169f52841d25ca9186" kind="variable"><name>root</name></member>
+    <member refid="structbTree_1ae7dd528be51e2fc4efa88679a05e3d36" kind="variable"><name>rootRRN</name></member>
+    <member refid="structbTree_1a6098952e960a3d0f5342aa1caaebe403" kind="variable"><name>nextRRN</name></member>
+    <member refid="structbTree_1ab7e931cdb194168712d6139ca4e21d8b" kind="variable"><name>numNodes</name></member>
+  </compound>
+  <compound refid="structindex__data__s1" kind="struct"><name>index_data_s1</name>
+    <member refid="structindex__data__s1_1a4fa17ecc198474bd2c3ebfc0af893cd4" kind="variable"><name>id</name></member>
+    <member refid="structindex__data__s1_1a45c767b4d13d41d0534c5af58f429263" kind="variable"><name>rrn</name></member>
+  </compound>
+  <compound refid="structindex__data__s2" kind="struct"><name>index_data_s2</name>
+    <member refid="structindex__data__s2_1a79de52750b96df5cf91bd38b37b1c325" kind="variable"><name>id</name></member>
+    <member refid="structindex__data__s2_1ab2c0f1e05483fa4fcb9921d39e616225" kind="variable"><name>byteOffset</name></member>
+  </compound>
+  <compound refid="structindex__s1" kind="struct"><name>index_s1</name>
+    <member refid="structindex__s1_1ab0199acdfcfae9f6fc2d867e88219e7d" kind="variable"><name>data</name></member>
+    <member refid="structindex__s1_1abbfc10d0b5026e2accdb53a829dcfbaf" kind="variable"><name>size</name></member>
+  </compound>
+  <compound refid="structindex__s2" kind="struct"><name>index_s2</name>
+    <member refid="structindex__s2_1a77becc8883b80d749808b74673f78d9b" kind="variable"><name>data</name></member>
+    <member refid="structindex__s2_1a240d921e8475796c81141e21d76755b1" kind="variable"><name>size</name></member>
+  </compound>
+  <compound refid="structkey" kind="struct"><name>key</name>
+    <member refid="structkey_1a91aaee28ce9fa803f5d42fd76b189f8a" kind="variable"><name>id</name></member>
+    <member refid="structkey_1a0779ed737900b74aa1c7aa948a72d0fa" kind="variable"><name>fileType</name></member>
+    <member refid="structkey_1a4e10ece69b96a4a8546b8069531cbf6a" kind="variable"><name>byteOffset</name></member>
+    <member refid="structkey_1a852b91ba3d7927f67f4187b9b0efbb1c" kind="variable"><name>rrn</name></member>
+    <member refid="structkey_1af2c522dc275e560b9e2bc7cb5a613382" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="structregistry__data__s" kind="struct"><name>registry_data_s</name>
+    <member refid="structregistry__data__s_1addf22a9186e4e8e3fd1871b8dfc4b678" kind="variable"><name>id</name></member>
+    <member refid="structregistry__data__s_1a2adc425b2bc8ef523c6e5e91b00f4f85" kind="variable"><name>year</name></member>
+    <member refid="structregistry__data__s_1ab9310f74355797135b58d69e01f16c9a" kind="variable"><name>city</name></member>
+    <member refid="structregistry__data__s_1a33dcabcaa533414579666d16ecdd8256" kind="variable"><name>amount</name></member>
+    <member refid="structregistry__data__s_1ab6b14c5d781ead0ace9f63a00d823b59" kind="variable"><name>initials</name></member>
+    <member refid="structregistry__data__s_1a326c4772e820877ae96ccc45a6dee5b0" kind="variable"><name>brand</name></member>
+    <member refid="structregistry__data__s_1aa24d2377c62da75ef5d4f8da2d2544da" kind="variable"><name>model</name></member>
+  </compound>
+  <compound refid="structWField" kind="struct"><name>WField</name>
+    <member refid="structWField_1a9c4c6ae2ad60462fb28c87206e9490fc" kind="variable"><name>name</name></member>
+    <member refid="structWField_1adc4834856a1c3f695de4b5b17c15feef" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="btree_8h" kind="file"><name>btree.h</name>
+    <member refid="btree_8h_1a12c2040f25d8e3a7b9e1c2024c618cb6" kind="define"><name>INF</name></member>
+    <member refid="btree_8h_1a3077ecca3770bdee50e6a17dfb55d002" kind="define"><name>MAX_KEYS</name></member>
+    <member refid="btree_8h_1a06ea269956fb652c4f4853e593813b26" kind="define"><name>MAX_DESC</name></member>
+    <member refid="btree_8h_1a77988da40e9a35da51ea0e8943ebbd4a" kind="define"><name>ROOT</name></member>
+    <member refid="btree_8h_1a045054247e192cb387ff6126429f8199" kind="define"><name>MID</name></member>
+    <member refid="btree_8h_1a62e90d5c1b5aad7ab60823163cc2f2d7" kind="define"><name>LEAF</name></member>
+    <member refid="btree_8h_1a2356fb7b976daa7003f1e629351af5ce" kind="typedef"><name>Key</name></member>
+    <member refid="btree_8h_1a6090f6b4bf1f6995a25a8bb2719823ea" kind="function"><name>compareKeys</name></member>
+    <member refid="btree_8h_1a604f93638e3376ca22cf97cdfd7b9156" kind="function"><name>readNode</name></member>
+    <member refid="btree_8h_1ab221fb711d048782eccd3d2205e0fe4e" kind="function"><name>read_tree_header</name></member>
+    <member refid="btree_8h_1ae08a913663d198fb6f42f73d45af2d96" kind="function"><name>searchID</name></member>
+    <member refid="btree_8h_1a7894da72c3fea568f79ef1c307943503" kind="function"><name>insertKey</name></member>
+    <member refid="btree_8h_1aacc992c0640153e89ea1951487ffd606" kind="function"><name>destroyTree</name></member>
+    <member refid="btree_8h_1a566eebc6cd5895b11f4dab2bae645bb2" kind="function"><name>create_btree_t1</name></member>
+    <member refid="btree_8h_1a6ee043356c2d48ba7f49830d9946f12f" kind="function"><name>create_btree_t2</name></member>
+  </compound>
+  <compound refid="csv_8h" kind="file"><name>csv.h</name>
+    <member refid="csv_8h_1a69b5b6c23fbe9783c2bdb1ba512d498f" kind="function"><name>read_from_csv</name></member>
+  </compound>
+  <compound refid="database_8h" kind="file"><name>database.h</name>
+    <member refid="database_8h_1a351b05f3c07dd796051e63e833cb6815" kind="function"><name>create_table</name></member>
+    <member refid="database_8h_1aeb07230ca5207e1928c89925321330dc" kind="function"><name>select_from</name></member>
+    <member refid="database_8h_1afa8880b942f1b1b22cb4746cb0c988aa" kind="function"><name>select_from_where</name></member>
+    <member refid="database_8h_1a439b33c4aa82b6258b8a67cbc6322126" kind="function"><name>select_from_RRN</name></member>
+    <member refid="database_8h_1ad07aab3bb1257ec4d51b1590a85477ad" kind="function"><name>create_index</name></member>
+    <member refid="database_8h_1aa58ea2cd05fdc1ef1be6213df523887a" kind="function"><name>delete_from_where</name></member>
+    <member refid="database_8h_1ab7584cff00e6bdc60a2296ec47c08136" kind="function"><name>insert_into</name></member>
+    <member refid="database_8h_1a12209ddbcba2126e6c9067917a59c758" kind="function"><name>update_where</name></member>
+    <member refid="database_8h_1a0ffc58b6ddc782568d842e34a1d8b6f9" kind="function"><name>search_where_b</name></member>
+    <member refid="database_8h_1a1ec46593101afbc6e13a67098ad39670" kind="function"><name>insert_into_b</name></member>
+    <member refid="database_8h_1a7f30ed13bc0c801482bca1b7df82d17f" kind="function"><name>create_index_b</name></member>
+  </compound>
+  <compound refid="file__t1_8h" kind="file"><name>file_t1.h</name>
+    <member refid="file__t1_8h_1a99701500571b1f7a63f70ad2f5ecf8b8" kind="function"><name>create_file_t1</name></member>
+    <member refid="file__t1_8h_1a22e9656550a16724e4e633d78bc38cb6" kind="function"><name>add_registry_t1</name></member>
+    <member refid="file__t1_8h_1a20669ccba55e9cc3c235f4f14d57f29a" kind="function"><name>read_registry_t1</name></member>
+    <member refid="file__t1_8h_1aa644cb69efd869e9fdc24f3c09b45b60" kind="function"><name>read_file_t1</name></member>
+    <member refid="file__t1_8h_1a72acb49ebcebd52b50e6d9a27209a46d" kind="function"><name>search_where_t1</name></member>
+    <member refid="file__t1_8h_1a18bf2b573be8f49294db036728b87f37" kind="function"><name>close_file_t1</name></member>
+    <member refid="file__t1_8h_1a66d1ea6e6fa512852486b9117fd4f69b" kind="function"><name>search_rrn</name></member>
+    <member refid="file__t1_8h_1a2c9b512536d2fc98827c214f281e7e62" kind="function"><name>update_RRN</name></member>
+    <member refid="file__t1_8h_1af5ee20ca39769b218082b2375c5273eb" kind="function"><name>push_deleted_stack</name></member>
+    <member refid="file__t1_8h_1aaf812be725f05d173385dacfa6259044" kind="function"><name>update_registry_t1</name></member>
+    <member refid="file__t1_8h_1aa19d56eedc74f26b3c804fc338e46833" kind="function"><name>insert_into_t1</name></member>
+  </compound>
+  <compound refid="file__t2_8h" kind="file"><name>file_t2.h</name>
+    <member refid="file__t2_8h_1a1d8c5309e07439b8d9a61ad4e6295057" kind="typedef"><name>lli</name></member>
+    <member refid="file__t2_8h_1a10abacf75f119d41fdb1c40b19108709" kind="function"><name>create_file_t2</name></member>
+    <member refid="file__t2_8h_1ac6c785827529c796de77b15bc8718e05" kind="function"><name>calculate_registry_size</name></member>
+    <member refid="file__t2_8h_1adfcdca231b71e6d14551de9874a9950d" kind="function"><name>add_registry_t2</name></member>
+    <member refid="file__t2_8h_1a4180385ab7d9abce93132d8c5d2565d7" kind="function"><name>update_byte_offset</name></member>
+    <member refid="file__t2_8h_1a3e17b9550f52950da932a195fe7f04c3" kind="function"><name>read_registry_t2</name></member>
+    <member refid="file__t2_8h_1ac4c1c0949999ba2d9b55809085f99215" kind="function"><name>read_file_t2</name></member>
+    <member refid="file__t2_8h_1a71ba3f36603148e2d09883e97ae88ab7" kind="function"><name>close_file_t2</name></member>
+    <member refid="file__t2_8h_1ad00902d2d35c2701feca731dd89bf091" kind="function"><name>search_where_t2</name></member>
+    <member refid="file__t2_8h_1a2b5a781c8f606f1aea842423b9656870" kind="function"><name>insert_into_t2</name></member>
+    <member refid="file__t2_8h_1a4cf7d5eb8360cb825d128773689a7d18" kind="function"><name>search_byteOffset</name></member>
+  </compound>
+  <compound refid="index__t1_8h" kind="file"><name>index_t1.h</name>
+    <member refid="index__t1_8h_1a1e854cf392f48751b77ee7d24087839b" kind="define"><name>DATA_HEADER_SIZE</name></member>
+    <member refid="index__t1_8h_1aa0c440541f5ac7c16f6ebbc28a04dd6d" kind="typedef"><name>index_data_st1</name></member>
+    <member refid="index__t1_8h_1acefa9f5f522bee0edf97308ff9cfd7a4" kind="typedef"><name>index_st1</name></member>
+    <member refid="index__t1_8h_1a3070d860ef695e5e1208187e60bd20e0" kind="function"><name>create_index_t1</name></member>
+    <member refid="index__t1_8h_1adac0e76cf7a6fa44695d6fa558f1189f" kind="function"><name>write_index_file_t1</name></member>
+    <member refid="index__t1_8h_1a4f19765982ab68ee74cd58cc878696d4" kind="function"><name>get_index_t1</name></member>
+    <member refid="index__t1_8h_1aa9e30c884530068cf0211b3b23c88768" kind="function"><name>delete_where_t1</name></member>
+    <member refid="index__t1_8h_1af8bc868e7d9ca02dca583f9db69012c5" kind="function"><name>update_where_t1</name></member>
+    <member refid="index__t1_8h_1ac84925ee732c5981468d628f66f038c9" kind="function"><name>binary_search_t1</name></member>
+  </compound>
+  <compound refid="index__t2_8h" kind="file"><name>index_t2.h</name>
+    <member refid="index__t2_8h_1a1d8c5309e07439b8d9a61ad4e6295057" kind="typedef"><name>lli</name></member>
+    <member refid="index__t2_8h_1a58de49139a4f01bcef70dcebd625c6e0" kind="typedef"><name>index_data_st2</name></member>
+    <member refid="index__t2_8h_1a9ab933d275ef4a0f7b58f9b10e162801" kind="typedef"><name>index_st2</name></member>
+    <member refid="index__t2_8h_1a0ee71d345a90621de5c811132f6b6646" kind="function"><name>create_index_t2</name></member>
+    <member refid="index__t2_8h_1a5cf7e9bc694a51e9bf1877e1e4f6a125" kind="function"><name>delete_where_t2</name></member>
+    <member refid="index__t2_8h_1aa8dd20c63d1d9db0501e78a53e61535e" kind="function"><name>update_registry_t2</name></member>
+    <member refid="index__t2_8h_1a8134e95bedd2d73610e56096a5769874" kind="function"><name>binary_search_t2</name></member>
+    <member refid="index__t2_8h_1aeb32acf07fa89f5aa6ae4c32e5bc1ead" kind="function"><name>get_index_t2</name></member>
+    <member refid="index__t2_8h_1a3e65d124c46efe393c04df0761e4f338" kind="function"><name>write_index_file_t2</name></member>
+    <member refid="index__t2_8h_1afc1a314071b76c11a56066658d17fe94" kind="function"><name>update_where_t2</name></member>
+  </compound>
+  <compound refid="myString_8h" kind="file"><name>myString.h</name>
+    <member refid="myString_8h_1a30c02b3bcd31ec79d3140bc9d699ca63" kind="function"><name>stringEnd</name></member>
+    <member refid="myString_8h_1a635fd76b5f5283c9987162cc3f98f12c" kind="function"><name>readFixedSizeString</name></member>
+    <member refid="myString_8h_1a6f2837efc90e880c7d9e79951d170521" kind="function"><name>readString</name></member>
+    <member refid="myString_8h_1ad6e1235e71340a21a651a75ca438810f" kind="function"><name>readString2</name></member>
+  </compound>
+  <compound refid="utils_8h" kind="file"><name>utils.h</name>
+    <member refid="utils_8h_1a200d9515a6ace6fe114bca5b0151e424" kind="define"><name>ARR_SIZE</name></member>
+    <member refid="utils_8h_1ab4ecff344365ca5209e369260d4e6f85" kind="typedef"><name>registry_data_st</name></member>
+    <member refid="utils_8h_1a73cb953389e5a1a14c2c726796f047c3" kind="typedef"><name>Field</name></member>
+    <member refid="utils_8h_1a4fa9469637b72e4df1b1906bd3ab7900" kind="function"><name>compare_registry</name></member>
+    <member refid="utils_8h_1a31eceacbf297b0770d7f7e6c78fa01c8" kind="function"><name>print_registry</name></member>
+    <member refid="utils_8h_1a2abc41ffb562ba4589c6fb76c196d112" kind="function"><name>open_file_rb</name></member>
+    <member refid="utils_8h_1a38a4a8da251090bacfb4e6ac0e76e8a5" kind="function"><name>open_file_rplusb</name></member>
+    <member refid="utils_8h_1ab7d0a4ef24ad2e0a21f90ebaca7db1e6" kind="function"><name>open_file_wb</name></member>
+    <member refid="utils_8h_1a28ea9327fb09aba4511e6f8b1059e831" kind="function"><name>readline</name></member>
+    <member refid="utils_8h_1a466f516fc6e25d3965a9ac4166bf1600" kind="function"><name>binarioNaTela</name></member>
+    <member refid="utils_8h_1a879dcd689a2275db5af8be1daa86a793" kind="function"><name>scan_quote_string</name></member>
+    <member refid="utils_8h_1abfa4570669ae5278b2a05e1fde038765" kind="function"><name>check_status</name></member>
+    <member refid="utils_8h_1a58f1de90af757d1a3b4f1a93293f26fd" kind="function"><name>logical_deletion</name></member>
+    <member refid="utils_8h_1ad60fe7b28861a7ce7b4bdb21b8e73879" kind="function"><name>search_field_id</name></member>
+    <member refid="utils_8h_1ad36272995c937f42daaeb86a211f40f7" kind="function"><name>get_field</name></member>
+    <member refid="utils_8h_1a1caeeec0e1dc9a4b36c52644ebfe5e2b" kind="function"><name>free_field</name></member>
+    <member refid="utils_8h_1af5a4e9b75038c48a41b1f66290afae2d" kind="function"><name>read_registry_line</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1a6e393e5adf34980c34b99e9850258a2d" kind="define"><name>CREATE_TABLE</name></member>
+    <member refid="main_8c_1a53dc4af00adc7b3b4d12eafb71596dfc" kind="define"><name>SELECT</name></member>
+    <member refid="main_8c_1ae68224d0ad2910862f0905a0a1195527" kind="define"><name>SELECT_WHERE</name></member>
+    <member refid="main_8c_1aa901faf7b92be01945d9b93023feadb4" kind="define"><name>SEARCH_RRN</name></member>
+    <member refid="main_8c_1a508073385d0192f831f72cb9cc08886b" kind="define"><name>CREATE_INDEX</name></member>
+    <member refid="main_8c_1add84b34659b910876e3d358cf85ff436" kind="define"><name>DELETE_WHERE</name></member>
+    <member refid="main_8c_1a0b525acff759e12e0ea150342d4f00ef" kind="define"><name>INSERT_INTO</name></member>
+    <member refid="main_8c_1a79ed89cdd2497c0637bc35ee1034a120" kind="define"><name>UPDATE_WHERE</name></member>
+    <member refid="main_8c_1ac57bf0ea923a3b371961e1c261164174" kind="define"><name>CREATE_INDEX_B</name></member>
+    <member refid="main_8c_1a8b3f757a6e0c1afe6705be910e909782" kind="define"><name>SEARCH_WHERE_B</name></member>
+    <member refid="main_8c_1a13e21982070af09e77288e2386f0e152" kind="define"><name>INSERT_INTO_B</name></member>
+    <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_09e761304027c904456130627fd4dcf5" kind="dir"><name>includes</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,36 @@
+\hypertarget{file__t2_8h_source}{}\doxysection{file\+\_\+t2.\+h}
+\label{file__t2_8h_source}\index{includes/file\_t2.h@{includes/file\_t2.h}}
+\mbox{\hyperlink{file__t2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef \_\_FILE\_T2\_H\_\_}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define \_\_FILE\_T2\_H\_\_}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../includes/csv.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{typedef} \textcolor{keywordtype}{long} \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} lli;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{19 FILE *\mbox{\hyperlink{file__t2_8h_a10abacf75f119d41fdb1c40b19108709}{create\_file\_t2}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *filename);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{27 \textcolor{keywordtype}{int} \mbox{\hyperlink{file__t2_8h_ac6c785827529c796de77b15bc8718e05}{calculate\_registry\_size}}(\mbox{\hyperlink{structregistry__data__s}{registry\_data\_st}} data);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{35 \textcolor{keywordtype}{void} \mbox{\hyperlink{file__t2_8h_adfcdca231b71e6d14551de9874a9950d}{add\_registry\_t2}}(FILE *file, \mbox{\hyperlink{structregistry__data__s}{registry\_data\_st}} data, \textcolor{keywordtype}{int} additionalSize);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{43 \textcolor{keywordtype}{void} \mbox{\hyperlink{file__t2_8h_a4180385ab7d9abce93132d8c5d2565d7}{update\_byte\_offset}}(FILE *file, lli byteOffset);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{52 \mbox{\hyperlink{structregistry__data__s}{registry\_data\_st}} \mbox{\hyperlink{file__t2_8h_a3e17b9550f52950da932a195fe7f04c3}{read\_registry\_t2}}(FILE* file);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59 \textcolor{keywordtype}{void} \mbox{\hyperlink{file__t2_8h_ac4c1c0949999ba2d9b55809085f99215}{read\_file\_t2}}(FILE *file);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66 \textcolor{keywordtype}{void} \mbox{\hyperlink{file__t2_8h_a71ba3f36603148e2d09883e97ae88ab7}{close\_file\_t2}}(FILE *file);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{75 \textcolor{keywordtype}{void} \mbox{\hyperlink{file__t2_8h_ad00902d2d35c2701feca731dd89bf091}{search\_where\_t2}}(FILE *file, \mbox{\hyperlink{structWField}{Field}} *f, \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{83 \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} \mbox{\hyperlink{file__t2_8h_a2b5a781c8f606f1aea842423b9656870}{insert\_into\_t2}}(FILE *binFile, \mbox{\hyperlink{structregistry__data__s}{registry\_data\_st}} data);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{91 \textcolor{keywordtype}{void} \mbox{\hyperlink{file__t2_8h_a4cf7d5eb8360cb825d128773689a7d18}{search\_byteOffset}}(FILE *file, \textcolor{keywordtype}{long} \textcolor{keywordtype}{int} byteOffset);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

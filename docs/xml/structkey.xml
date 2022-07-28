@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structkey" kind="struct" language="C++" prot="public">
+    <compoundname>key</compoundname>
+    <includes refid="btree_8h" local="no">btree.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structkey_1a91aaee28ce9fa803f5d42fd76b189f8a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int key::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>key::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="27" column="9" bodyfile="includes/btree.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkey_1a0779ed737900b74aa1c7aa948a72d0fa" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char key::fileType</definition>
+        <argsstring></argsstring>
+        <name>fileType</name>
+        <qualifiedname>key::fileType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="28" column="10" bodyfile="includes/btree.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkey_1a4e10ece69b96a4a8546b8069531cbf6a" prot="public" static="no" mutable="no">
+        <type>long int</type>
+        <definition>long int key::byteOffset</definition>
+        <argsstring></argsstring>
+        <name>byteOffset</name>
+        <qualifiedname>key::byteOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="30" column="18" bodyfile="includes/btree.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkey_1a852b91ba3d7927f67f4187b9b0efbb1c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int key::rrn</definition>
+        <argsstring></argsstring>
+        <name>rrn</name>
+        <qualifiedname>key::rrn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="31" column="13" bodyfile="includes/btree.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structkey_1af2c522dc275e560b9e2bc7cb5a613382" prot="public" static="no" mutable="no">
+        <type>union key::@0</type>
+        <definition>union key::@0 key::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>key::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="includes/btree.h" line="32" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that represents a B-Tree key. Every key has a id, file type and a rrn or byteoffset. A union &quot;value&quot; is used to store different type values on the key. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="includes/btree.h" line="26" column="1" bodyfile="includes/btree.h" bodystart="26" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structkey_1a4e10ece69b96a4a8546b8069531cbf6a" prot="public" virt="non-virtual"><scope>key</scope><name>byteOffset</name></member>
+      <member refid="structkey_1a0779ed737900b74aa1c7aa948a72d0fa" prot="public" virt="non-virtual"><scope>key</scope><name>fileType</name></member>
+      <member refid="structkey_1a91aaee28ce9fa803f5d42fd76b189f8a" prot="public" virt="non-virtual"><scope>key</scope><name>id</name></member>
+      <member refid="structkey_1a852b91ba3d7927f67f4187b9b0efbb1c" prot="public" virt="non-virtual"><scope>key</scope><name>rrn</name></member>
+      <member refid="structkey_1af2c522dc275e560b9e2bc7cb5a613382" prot="public" virt="non-virtual"><scope>key</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

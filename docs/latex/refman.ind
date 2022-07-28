@@ -1,0 +1,278 @@
+\begin{theindex}
+
+  \item {add\_registry\_t1}
+    \subitem {file\_t1.h}, \hyperpage{23}
+  \item {add\_registry\_t2}
+    \subitem {file\_t2.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {binary\_search\_t1}
+    \subitem {index\_t1.h}, \hyperpage{33}
+  \item {binary\_search\_t2}
+    \subitem {index\_t2.h}, \hyperpage{37}
+  \item {bNode}, \hyperpage{5}
+  \item {bTree}, \hyperpage{5}
+  \item {btree.h}
+    \subitem {compareKeys}, \hyperpage{12}
+    \subitem {create\_btree\_t1}, \hyperpage{12}
+    \subitem {create\_btree\_t2}, \hyperpage{13}
+    \subitem {destroyTree}, \hyperpage{13}
+    \subitem {insertKey}, \hyperpage{13}
+    \subitem {read\_tree\_header}, \hyperpage{14}
+    \subitem {readNode}, \hyperpage{14}
+    \subitem {searchID}, \hyperpage{15}
+
+  \indexspace
+
+  \item {calculate\_registry\_size}
+    \subitem {file\_t2.h}, \hyperpage{29}
+  \item {check\_status}
+    \subitem {utils.h}, \hyperpage{43}
+  \item {close\_file\_t1}
+    \subitem {file\_t1.h}, \hyperpage{24}
+  \item {close\_file\_t2}
+    \subitem {file\_t2.h}, \hyperpage{29}
+  \item {compare\_registry}
+    \subitem {utils.h}, \hyperpage{43}
+  \item {compareKeys}
+    \subitem {btree.h}, \hyperpage{12}
+  \item {create\_btree\_t1}
+    \subitem {btree.h}, \hyperpage{12}
+  \item {create\_btree\_t2}
+    \subitem {btree.h}, \hyperpage{13}
+  \item {create\_file\_t1}
+    \subitem {file\_t1.h}, \hyperpage{24}
+  \item {create\_file\_t2}
+    \subitem {file\_t2.h}, \hyperpage{29}
+  \item {create\_index}
+    \subitem {database.h}, \hyperpage{18}
+  \item {create\_index\_b}
+    \subitem {database.h}, \hyperpage{18}
+  \item {create\_index\_t1}
+    \subitem {index\_t1.h}, \hyperpage{33}
+  \item {create\_index\_t2}
+    \subitem {index\_t2.h}, \hyperpage{37}
+  \item {create\_table}
+    \subitem {database.h}, \hyperpage{18}
+  \item {csv.h}
+    \subitem {read\_from\_csv}, \hyperpage{16}
+
+  \indexspace
+
+  \item {database.h}
+    \subitem {create\_index}, \hyperpage{18}
+    \subitem {create\_index\_b}, \hyperpage{18}
+    \subitem {create\_table}, \hyperpage{18}
+    \subitem {delete\_from\_where}, \hyperpage{19}
+    \subitem {insert\_into}, \hyperpage{19}
+    \subitem {insert\_into\_b}, \hyperpage{19}
+    \subitem {search\_where\_b}, \hyperpage{20}
+    \subitem {select\_from\_RRN}, \hyperpage{20}
+    \subitem {select\_from\_where}, \hyperpage{20}
+    \subitem {update\_where}, \hyperpage{22}
+  \item {delete\_from\_where}
+    \subitem {database.h}, \hyperpage{19}
+  \item {delete\_where\_t1}
+    \subitem {index\_t1.h}, \hyperpage{34}
+  \item {delete\_where\_t2}
+    \subitem {index\_t2.h}, \hyperpage{37}
+  \item {destroyTree}
+    \subitem {btree.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Field}
+    \subitem {utils.h}, \hyperpage{43}
+  \item {file\_t1.h}
+    \subitem {add\_registry\_t1}, \hyperpage{23}
+    \subitem {close\_file\_t1}, \hyperpage{24}
+    \subitem {create\_file\_t1}, \hyperpage{24}
+    \subitem {insert\_into\_t1}, \hyperpage{24}
+    \subitem {push\_deleted\_stack}, \hyperpage{25}
+    \subitem {read\_file\_t1}, \hyperpage{25}
+    \subitem {read\_registry\_t1}, \hyperpage{25}
+    \subitem {search\_rrn}, \hyperpage{25}
+    \subitem {search\_where\_t1}, \hyperpage{26}
+    \subitem {update\_registry\_t1}, \hyperpage{26}
+    \subitem {update\_RRN}, \hyperpage{27}
+  \item {file\_t2.h}
+    \subitem {add\_registry\_t2}, \hyperpage{28}
+    \subitem {calculate\_registry\_size}, \hyperpage{29}
+    \subitem {close\_file\_t2}, \hyperpage{29}
+    \subitem {create\_file\_t2}, \hyperpage{29}
+    \subitem {insert\_into\_t2}, \hyperpage{29}
+    \subitem {read\_file\_t2}, \hyperpage{30}
+    \subitem {read\_registry\_t2}, \hyperpage{30}
+    \subitem {search\_byteOffset}, \hyperpage{30}
+    \subitem {search\_where\_t2}, \hyperpage{31}
+    \subitem {update\_byte\_offset}, \hyperpage{31}
+  \item {free\_field}
+    \subitem {utils.h}, \hyperpage{44}
+
+  \indexspace
+
+  \item {get\_field}
+    \subitem {utils.h}, \hyperpage{44}
+  \item {get\_index\_t1}
+    \subitem {index\_t1.h}, \hyperpage{34}
+  \item {get\_index\_t2}
+    \subitem {index\_t2.h}, \hyperpage{38}
+
+  \indexspace
+
+  \item {includes/btree.h}, \hyperpage{11}, \hyperpage{15}
+  \item {includes/csv.h}, \hyperpage{16, 17}
+  \item {includes/database.h}, \hyperpage{17}, \hyperpage{22}
+  \item {includes/file\_t1.h}, \hyperpage{22}, \hyperpage{27}
+  \item {includes/file\_t2.h}, \hyperpage{27}, \hyperpage{32}
+  \item {includes/index\_t1.h}, \hyperpage{32}, \hyperpage{35}
+  \item {includes/index\_t2.h}, \hyperpage{36}, \hyperpage{39}
+  \item {includes/myString.h}, \hyperpage{40, 41}
+  \item {includes/utils.h}, \hyperpage{42}, \hyperpage{46}
+  \item {index\_data\_s1}, \hyperpage{6}
+  \item {index\_data\_s2}, \hyperpage{6}
+  \item {index\_s1}, \hyperpage{7}
+  \item {index\_s2}, \hyperpage{7}
+  \item {index\_t1.h}
+    \subitem {binary\_search\_t1}, \hyperpage{33}
+    \subitem {create\_index\_t1}, \hyperpage{33}
+    \subitem {delete\_where\_t1}, \hyperpage{34}
+    \subitem {get\_index\_t1}, \hyperpage{34}
+    \subitem {update\_where\_t1}, \hyperpage{34}
+    \subitem {write\_index\_file\_t1}, \hyperpage{35}
+  \item {index\_t2.h}
+    \subitem {binary\_search\_t2}, \hyperpage{37}
+    \subitem {create\_index\_t2}, \hyperpage{37}
+    \subitem {delete\_where\_t2}, \hyperpage{37}
+    \subitem {get\_index\_t2}, \hyperpage{38}
+    \subitem {update\_registry\_t2}, \hyperpage{38}
+    \subitem {update\_where\_t2}, \hyperpage{39}
+    \subitem {write\_index\_file\_t2}, \hyperpage{39}
+  \item {insert\_into}
+    \subitem {database.h}, \hyperpage{19}
+  \item {insert\_into\_b}
+    \subitem {database.h}, \hyperpage{19}
+  \item {insert\_into\_t1}
+    \subitem {file\_t1.h}, \hyperpage{24}
+  \item {insert\_into\_t2}
+    \subitem {file\_t2.h}, \hyperpage{29}
+  \item {insertKey}
+    \subitem {btree.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {key}, \hyperpage{8}
+
+  \indexspace
+
+  \item {logical\_deletion}
+    \subitem {utils.h}, \hyperpage{44}
+
+  \indexspace
+
+  \item {main.c}, \hyperpage{47}
+  \item {myString.h}
+    \subitem {readString}, \hyperpage{40}
+    \subitem {readString2}, \hyperpage{40}
+    \subitem {stringEnd}, \hyperpage{41}
+
+  \indexspace
+
+  \item {open\_file\_rb}
+    \subitem {utils.h}, \hyperpage{45}
+  \item {open\_file\_rplusb}
+    \subitem {utils.h}, \hyperpage{45}
+  \item {open\_file\_wb}
+    \subitem {utils.h}, \hyperpage{45}
+
+  \indexspace
+
+  \item {print\_registry}
+    \subitem {utils.h}, \hyperpage{46}
+  \item {push\_deleted\_stack}
+    \subitem {file\_t1.h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {read\_file\_t1}
+    \subitem {file\_t1.h}, \hyperpage{25}
+  \item {read\_file\_t2}
+    \subitem {file\_t2.h}, \hyperpage{30}
+  \item {read\_from\_csv}
+    \subitem {csv.h}, \hyperpage{16}
+  \item {read\_registry\_t1}
+    \subitem {file\_t1.h}, \hyperpage{25}
+  \item {read\_registry\_t2}
+    \subitem {file\_t2.h}, \hyperpage{30}
+  \item {read\_tree\_header}
+    \subitem {btree.h}, \hyperpage{14}
+  \item {readNode}
+    \subitem {btree.h}, \hyperpage{14}
+  \item {readString}
+    \subitem {myString.h}, \hyperpage{40}
+  \item {readString2}
+    \subitem {myString.h}, \hyperpage{40}
+  \item {registry\_data\_s}, \hyperpage{8}
+
+  \indexspace
+
+  \item {search\_byteOffset}
+    \subitem {file\_t2.h}, \hyperpage{30}
+  \item {search\_field\_id}
+    \subitem {utils.h}, \hyperpage{46}
+  \item {search\_rrn}
+    \subitem {file\_t1.h}, \hyperpage{25}
+  \item {search\_where\_b}
+    \subitem {database.h}, \hyperpage{20}
+  \item {search\_where\_t1}
+    \subitem {file\_t1.h}, \hyperpage{26}
+  \item {search\_where\_t2}
+    \subitem {file\_t2.h}, \hyperpage{31}
+  \item {searchID}
+    \subitem {btree.h}, \hyperpage{15}
+  \item {select\_from\_RRN}
+    \subitem {database.h}, \hyperpage{20}
+  \item {select\_from\_where}
+    \subitem {database.h}, \hyperpage{20}
+  \item {stringEnd}
+    \subitem {myString.h}, \hyperpage{41}
+
+  \indexspace
+
+  \item {update\_byte\_offset}
+    \subitem {file\_t2.h}, \hyperpage{31}
+  \item {update\_registry\_t1}
+    \subitem {file\_t1.h}, \hyperpage{26}
+  \item {update\_registry\_t2}
+    \subitem {index\_t2.h}, \hyperpage{38}
+  \item {update\_RRN}
+    \subitem {file\_t1.h}, \hyperpage{27}
+  \item {update\_where}
+    \subitem {database.h}, \hyperpage{22}
+  \item {update\_where\_t1}
+    \subitem {index\_t1.h}, \hyperpage{34}
+  \item {update\_where\_t2}
+    \subitem {index\_t2.h}, \hyperpage{39}
+  \item {utils.h}
+    \subitem {check\_status}, \hyperpage{43}
+    \subitem {compare\_registry}, \hyperpage{43}
+    \subitem {Field}, \hyperpage{43}
+    \subitem {free\_field}, \hyperpage{44}
+    \subitem {get\_field}, \hyperpage{44}
+    \subitem {logical\_deletion}, \hyperpage{44}
+    \subitem {open\_file\_rb}, \hyperpage{45}
+    \subitem {open\_file\_rplusb}, \hyperpage{45}
+    \subitem {open\_file\_wb}, \hyperpage{45}
+    \subitem {print\_registry}, \hyperpage{46}
+    \subitem {search\_field\_id}, \hyperpage{46}
+
+  \indexspace
+
+  \item {WField}, \hyperpage{9}
+  \item {write\_index\_file\_t1}
+    \subitem {index\_t1.h}, \hyperpage{35}
+  \item {write\_index\_file\_t2}
+    \subitem {index\_t2.h}, \hyperpage{39}
+
+\end{theindex}

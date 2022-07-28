@@ -1,0 +1,83 @@
+\hypertarget{myString_8h}{}\doxysection{includes/my\+String.h File Reference}
+\label{myString_8h}\index{includes/myString.h@{includes/myString.h}}
+
+
+Functions related to reading of strings.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{myString_8h_a30c02b3bcd31ec79d3140bc9d699ca63}{string\+End}} (int num\+Separators, char separator\+Array\mbox{[}$\,$\mbox{]}, char c)
+\begin{DoxyCompactList}\small\item\em Retorna se a leitura da string deve ou não ser finalizada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{myString_8h_a635fd76b5f5283c9987162cc3f98f12c}\label{myString_8h_a635fd76b5f5283c9987162cc3f98f12c}} 
+char $\ast$ {\bfseries read\+Fixed\+Size\+String} (FILE $\ast$fp, int string\+Size)
+\item 
+char $\ast$ \mbox{\hyperlink{myString_8h_a6f2837efc90e880c7d9e79951d170521}{read\+String}} ()
+\begin{DoxyCompactList}\small\item\em Função para leitura de strings. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{myString_8h_ad6e1235e71340a21a651a75ca438810f}{read\+String2}} (int num,...)
+\begin{DoxyCompactList}\small\item\em Função mais completa para leitura de strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to reading of strings. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{myString_8h_a6f2837efc90e880c7d9e79951d170521}\label{myString_8h_a6f2837efc90e880c7d9e79951d170521}} 
+\index{myString.h@{myString.h}!readString@{readString}}
+\index{readString@{readString}!myString.h@{myString.h}}
+\doxysubsubsection{\texorpdfstring{readString()}{readString()}}
+{\footnotesize\ttfamily char $\ast$ read\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função para leitura de strings. 
+
+\begin{DoxyReturn}{Returns}
+char$\ast$ string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{myString_8h_ad6e1235e71340a21a651a75ca438810f}\label{myString_8h_ad6e1235e71340a21a651a75ca438810f}} 
+\index{myString.h@{myString.h}!readString2@{readString2}}
+\index{readString2@{readString2}!myString.h@{myString.h}}
+\doxysubsubsection{\texorpdfstring{readString2()}{readString2()}}
+{\footnotesize\ttfamily char $\ast$ read\+String2 (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Função mais completa para leitura de strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & número de separadores que serão passados \\
+\hline
+{\em ...} & separadores\+: EOF, quebra de linha etc... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char$\ast$ string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{myString_8h_a30c02b3bcd31ec79d3140bc9d699ca63}\label{myString_8h_a30c02b3bcd31ec79d3140bc9d699ca63}} 
+\index{myString.h@{myString.h}!stringEnd@{stringEnd}}
+\index{stringEnd@{stringEnd}!myString.h@{myString.h}}
+\doxysubsubsection{\texorpdfstring{stringEnd()}{stringEnd()}}
+{\footnotesize\ttfamily int string\+End (\begin{DoxyParamCaption}\item[{int}]{num\+Separators,  }\item[{char}]{separator\+Array\mbox{[}$\,$\mbox{]},  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Retorna se a leitura da string deve ou não ser finalizada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Separators} & número de separadores \\
+\hline
+{\em separator\+Array} & array com todos finalizadores \\
+\hline
+{\em c} & caractere lido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 para leitura finalizada, caso contrário, 0 
+\end{DoxyReturn}
